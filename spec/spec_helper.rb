@@ -1,1 +1,2 @@
 require 'skymorph'
+require 'fixtures'
