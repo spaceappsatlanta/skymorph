@@ -11,6 +11,7 @@ require "skymorph/requests/image_request"
 require "skymorph/requests/position_request"
 require "skymorph/requests/tile_request"
 require "skymorph/requests/target_request"
+require "skymorph/requests/orbit_request"
 
 module SkyMorph
 end
