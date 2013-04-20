@@ -1,8 +1,9 @@
+require 'curb'
+
 module SkyMorph
   class Request
-
     def fetch
-      @http_client.get URI URI.encode url
+      @http_client.perform(url).body_str
     end
   end
 end

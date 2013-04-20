@@ -1,5 +1,3 @@
-require 'net/http'
-
 module SkyMorph
   class OrbitRequest < Request
     attr_accessor :epoch, :ecc, :per, :per_date, :om, :w, :i, :H
@@ -7,7 +5,7 @@ module SkyMorph
     #@@request_url = 'http://skyview.gsfc.nasa.gov/cgi-bin/skymorph/mobssel.pl?target=&NEAT=on&OE_EPOCH=%s&OE_EC=%s&OE_QR=%s&OE_TP=%s&OE_OM=%s&OE_W=%s&OE_IN=%s&OE_H=%s'
     @@request_url = 'http://skyview.gsfc.nasa.gov/cgi-bin/skymorph/mobssel.pl?target=&NEAT=on&%s'
     
-    def initialize(epoch, ecc, per, per_date, om, w, i, h, http_client=Net::HTTP)
+    def initialize(epoch, ecc, per, per_date, om, w, i, h, http_client=Curl::Easy)
       @http_client = http_client
       self.epoch      = epoch
       self.ecc        = ecc
