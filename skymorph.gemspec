@@ -6,11 +6,11 @@ require 'skymorph/version'
 Gem::Specification.new do |spec|
   spec.name          = "skymorph"
   spec.version       = Skymorph::VERSION
-  spec.authors       = ["Zac Stewart"]
-  spec.email         = ["zgstewart@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.authors       = ["Zac Stewart", "Thomas Holmes"]
+  spec.email         = ["zgstewart@gmail.com", "thomas@devminded.com"]
+  spec.description   = %q{Gem to consume SkyMorph data via the NASA SkyView service}
+  spec.summary       = %q{Gem to consume SkyMorph data via the NASA SkyView service}
+  spec.homepage      = "https://github.com/spaceappsatlanta/skymorph"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
