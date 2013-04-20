@@ -8,7 +8,7 @@ describe SkyMorph::TargetRequest do
     obj
   end
 
-  let(:request) { SkyMorph::TargetRequest.new(target=nil, http_client=http_client_double) }
+  let(:request) { SkyMorph::TargetRequest.new(target="foo_target", http_client=http_client_double) }
 
   describe "#fetch" do
     it { expect(request.fetch).to be_a_kind_of(String) }
@@ -16,8 +16,14 @@ describe SkyMorph::TargetRequest do
 
   describe "makes target search request" do
     it "should use http object" do
-      http_client_double.should_receive(:get).and_return("foo")
+      http_client_double.should_receive(:get)
       request.fetch
+    end
+
+    it "should request target" do
+      http_client_double.should_receive(:get) do |request|
+        TargetRequest.search_target_url
+      end
     end
   end
 end

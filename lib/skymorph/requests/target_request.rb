@@ -12,7 +12,7 @@ module SkyMorph
     end
 
     def fetch
-      @http_client.get(@@search_target_url)
+      @http_client.get(@@search_target_url % [target])
     end
   end
 end
