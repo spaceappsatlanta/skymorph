@@ -6,9 +6,9 @@ module SkyMorph
 
     def initialize(ra, dec, time, http_client=Curl::Easy)
       @http_client = http_client
-      self.ra   = ra
-      self.dec  = dec
-      self.time = time
+      self.ra   = ra.to_s
+      self.dec  = dec.to_s
+      self.time = time.respond_to?(:strftime) ? time.strftime('%Y-%m-%d %H:%M:%S') : time
     end
 
     def url

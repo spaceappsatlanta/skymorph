@@ -1,4 +1,4 @@
-module Skymorph
+module SkyMorph
   class RightAscension
     attr_accessor :hours, :minutes, :seconds
 
@@ -19,6 +19,10 @@ module Skymorph
 
     def eql?(other)
       self == other
+    end
+
+    def to_s
+      [hours, minutes, seconds].map { |t| t.to_s.rjust(2, '0') }.join ' '
     end
   end
 end
