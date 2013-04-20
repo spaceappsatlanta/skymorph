@@ -5,6 +5,7 @@ describe Skymorph::ObservationTableParser do
 
   describe '::parse' do
     let(:result) { subject.parse(Fixtures.observation_table_j99ts7a) }
+    let(:ceres_result) { subject.parse(Fixtures.observation_table_ceres) }
 
     it 'returns a hash' do
       expect(result).to be_kind_of(Array)
@@ -64,6 +65,19 @@ describe Skymorph::ObservationTableParser do
         major: nil,
         minor: nil,
         position_angle: nil
+      )
+
+      expect(ceres_result.first[:positional_error]).to eq(
+        major: 0.05,
+        minor: 0.04,
+        position_angle: -19.63
+      )
+    end
+
+    it 'fetches pixel_location' do
+      expect(result.first[:pixel_location]).to eq(
+        x: 71.92,
+        y: 547.29
       )
     end
   end

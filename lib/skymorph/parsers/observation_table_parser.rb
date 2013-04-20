@@ -32,6 +32,10 @@ module Skymorph
         minor: string_to_float_or_nil(row.xpath('td[14]').text),
         position_angle: string_to_float_or_nil(row.xpath('td[15]').text)
       }
+      pixel_location = {
+        x: row.xpath('td[16]').text.to_f,
+        y: row.xpath('td[17]').text.to_f
+      }
 
       { key: key,
         observation_id: observation_id,
@@ -42,7 +46,8 @@ module Skymorph
         magnitude: magnitude,
         velocity: velocity,
         offset: offset,
-        positional_error: positional_error }
+        positional_error: positional_error,
+        pixel_location: pixel_location }
     end
 
     private

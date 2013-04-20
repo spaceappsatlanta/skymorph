@@ -1,0 +1,1399 @@
+Content-type: text/html
+
+<title> SkyMorph Moving Object Detection: Ceres</title>
+</head>
+<body>
+<a href="/skymorph/skymorph.map">
+<img alt="Links to SkyMorph Interfaces and Feedback" 
+	src="/skymorph/skymorph.gif" border=0 ISMAP USEMAP="#skymorph"></a>
+<map name=skymorph>
+   <area alt="SkyMorph home page" shape=rect coords="0,0,236,60" 
+	href="/skymorph/skymorph.html">
+   <area alt="SkyMorph home page" shape=rect coords="60,62,117,79" 
+	href="/skymorph/skymorph.html">
+   <area alt="SkyMorph Observation Selection Page" shape=rect 
+	coords="124,62,236,79" href="/skymorph/obs.html">
+   <area alt="SkyMorph Moving Target Detection Page" shape=rect 
+	coords="243,62,359,79" href="/cgi-bin/skymorph/mobs.pl">
+   <area alt="Send Feedback Link" shape=rect coords="374,62,449,79" 
+	href="mailto:tam@silk.gsfc.nasa.gov">
+</map>
+<h2> <i>SkyMorph</i> moving target observations</h2>
+
+The following images may include the position of the object '<b>Ceres</b>'
+at the epoch of the observation.
+<p>
+<strong>Note: </strong><br>
+Positions are determined using the current JPL ephemeris by NASA's 
+<a href='http://ssd.jpl.nasa.gov/horizons.html'>
+Horizons </a> service.
+<br>Objects may not be visible due to biases in the ephemeris or 
+errors recorded image epochs that cause the object to
+lie outside the image.<br>  For non-NEAT
+data the object position may lie slightly beyond the image boundaries.
+
+<form action=mobsdisp.pl method=POST target=MorphDisplay>
+<input type=hidden name=Target value="Ceres">
+<h3> NEAT Observations for: Ceres </h3>
+<input type=hidden name=Headers_NEAT value='|Observation|Time|ObjRA|ObjDec|Plt RA|Plt Dec|Magnitude|V_RA|V_Dec|E_Maj|E_Min|E_PosAng|x|y|'>
+<table border>
+<tr>
+<td  bgcolor='#FFFFAA'>&nbsp</td>
+   <th  bgcolor='#FFFFAA'> Obs. ID </th>
+   <th  bgcolor='#FFFFAA'> Trip. </th>
+   <th  bgcolor='#FFFFAA'> Time </th>
+   <th colspan=2  bgcolor='#FFFFAA'> Predicted Object Position </th>
+   <th colspan=2  bgcolor='#FFFFAA'> Observation Center </th>
+   <th  bgcolor='#FFFFAA'> Mag. </th>
+   <th colspan=2  bgcolor='#FFFFAA'> Veloc. </th>
+   <th  bgcolor='#FFFFAA'> Offset </th>
+   <th colspan=3  bgcolor='#FFFFAA'> Positional error </th>
+   <th colspan=2  bgcolor='#FFFFAA'> Pixel Location </th>
+</tr>
+<tr>
+<td  bgcolor='#FFFFDD'>&nbsp</td>
+   <td  bgcolor='#FFFFDD'>&nbsp</td>
+   <th bgcolor='#FFFFDD'>&nbsp </th>
+   <td align=center  bgcolor='#EEEE99'>(UTC)</td>
+   <td align=center  bgcolor='#FFFFDD'>(ra)</td>
+   <td align=center  bgcolor='#FFFFDD'>(dec)</td>
+   <td align=center  bgcolor='#EEEE99'>(ra)</td>
+   <td align=center  bgcolor='#EEEE99'>(dec)</td>
+   <td  bgcolor='#FFFFDD'>&nbsp</td>
+   <td align=center  bgcolor='#EEEE99'> W-E ("/hour)</td>
+   <td align=center  bgcolor='#EEEE99'> S-N ("/hour)</td>
+   <td align=center  bgcolor='#FFFFDD'> (')</td>
+   <td align=center  bgcolor='#EEEE99'> Major(") </td>
+   <td align=center  bgcolor='#EEEE99'> Minor(") </td>
+   <td align=center  bgcolor='#EEEE99'> PosAng </td>
+   <td  bgcolor='#FFFFDD'> X </td> <td  bgcolor='#FFFFDD'> Y </td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960612124155|50246.529224537|244.586842294571|-18.7630733314539|244.964565|-18.55884|7.30|-32.09|-4.65|0.05|0.04|-19.63|2942.15100272039|2568.62273640486|y|'>
+  <td  bgcolor='#FFFFDD'>960612124155</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-06-12&nbsp;12:42:05</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;18&nbsp;20.84</td>
+  <td  bgcolor='#FFFFDD'>-18&nbsp;45&nbsp;47.1</td>
+  <td  bgcolor='#EEEE99'>16&nbsp;19&nbsp;51.50</td>
+  <td  bgcolor='#EEEE99'>-18&nbsp;33&nbsp;31.8</td>
+  <td  bgcolor='#FFFFDD'>7.30</td>
+  <td  bgcolor='#EEEE99'>-32.09</td>
+  <td  bgcolor='#EEEE99'>-4.65</td>
+  <td  bgcolor='#FFFFDD'>  24.72</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>-19.63</td>
+  <td align=center  bgcolor='#FFFFDD'>2942.15</td><td align=center  bgcolor='#FFFFDD'>2568.62</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960612131820|50246.5545138889|244.581324998925|-18.763833474331|244.954665|-18.56389|7.31|-32.08|-4.65|0.05|0.04|-19.63|2930.79899380174|2557.29333913111|y|'>
+  <td  bgcolor='#FFFFDD'>960612131820</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-06-12&nbsp;13:18:30</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;18&nbsp;19.52</td>
+  <td  bgcolor='#FFFFDD'>-18&nbsp;45&nbsp;49.8</td>
+  <td  bgcolor='#EEEE99'>16&nbsp;19&nbsp;49.12</td>
+  <td  bgcolor='#EEEE99'>-18&nbsp;33&nbsp;50.0</td>
+  <td  bgcolor='#FFFFDD'>7.31</td>
+  <td  bgcolor='#EEEE99'>-32.08</td>
+  <td  bgcolor='#EEEE99'>-4.65</td>
+  <td  bgcolor='#FFFFDD'>  24.38</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>-19.63</td>
+  <td align=center  bgcolor='#FFFFDD'>2930.80</td><td align=center  bgcolor='#FFFFDD'>2557.29</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960612134951|50246.576400463|244.576551805362|-18.764491545505|244.936695|-18.57088|7.31|-32.07|-4.65|0.05|0.04|-19.63|2897.460051556|2540.09173767333|y|'>
+  <td  bgcolor='#FFFFDD'>960612134951</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-06-12&nbsp;13:50:01</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;18&nbsp;18.37</td>
+  <td  bgcolor='#FFFFDD'>-18&nbsp;45&nbsp;52.2</td>
+  <td  bgcolor='#EEEE99'>16&nbsp;19&nbsp;44.81</td>
+  <td  bgcolor='#EEEE99'>-18&nbsp;34&nbsp;15.2</td>
+  <td  bgcolor='#FFFFDD'>7.31</td>
+  <td  bgcolor='#EEEE99'>-32.07</td>
+  <td  bgcolor='#EEEE99'>-4.65</td>
+  <td  bgcolor='#FFFFDD'>  23.54</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>-19.63</td>
+  <td align=center  bgcolor='#FFFFDD'>2897.46</td><td align=center  bgcolor='#FFFFDD'>2540.09</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960613110912|50247.464837963|244.384181389969|-18.79135815603|244.97967|-18.54887|7.30|-31.64|-4.70|0.05|0.03|-19.70|3468.88202011056|2674.29034554955|y|'>
+  <td  bgcolor='#FFFFDD'>960613110912</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-06-13&nbsp;11:09:22</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;17&nbsp;32.20</td>
+  <td  bgcolor='#FFFFDD'>-18&nbsp;47&nbsp;28.9</td>
+  <td  bgcolor='#EEEE99'>16&nbsp;19&nbsp;55.12</td>
+  <td  bgcolor='#EEEE99'>-18&nbsp;32&nbsp;55.9</td>
+  <td  bgcolor='#FFFFDD'>7.30</td>
+  <td  bgcolor='#EEEE99'>-31.64</td>
+  <td  bgcolor='#EEEE99'>-4.70</td>
+  <td  bgcolor='#FFFFDD'>  36.84</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-19.70</td>
+  <td align=center  bgcolor='#FFFFDD'>3468.88</td><td align=center  bgcolor='#FFFFDD'>2674.29</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960613113742|50247.4846296296|244.379927574267|-18.7919596986347|244.975545|-18.55196|7.30|-31.63|-4.70|0.05|0.03|-19.70|3469.14223298808|2667.9780815274|y|'>
+  <td  bgcolor='#FFFFDD'>960613113742</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-06-13&nbsp;11:37:52</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;17&nbsp;31.18</td>
+  <td  bgcolor='#FFFFDD'>-18&nbsp;47&nbsp;31.1</td>
+  <td  bgcolor='#EEEE99'>16&nbsp;19&nbsp;54.13</td>
+  <td  bgcolor='#EEEE99'>-18&nbsp;33&nbsp;07.1</td>
+  <td  bgcolor='#FFFFDD'>7.30</td>
+  <td  bgcolor='#EEEE99'>-31.63</td>
+  <td  bgcolor='#EEEE99'>-4.70</td>
+  <td  bgcolor='#FFFFDD'>  36.79</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-19.70</td>
+  <td align=center  bgcolor='#FFFFDD'>3469.14</td><td align=center  bgcolor='#FFFFDD'>2667.98</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960613120926|50247.5066666667|244.375192809872|-18.7926296569861|244.970745|-18.5553|7.30|-31.61|-4.70|0.05|0.03|-19.70|3468.82416673936|2661.10717376942|y|'>
+  <td  bgcolor='#FFFFDD'>960613120926</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-06-13&nbsp;12:09:36</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;17&nbsp;30.05</td>
+  <td  bgcolor='#FFFFDD'>-18&nbsp;47&nbsp;33.5</td>
+  <td  bgcolor='#EEEE99'>16&nbsp;19&nbsp;52.98</td>
+  <td  bgcolor='#EEEE99'>-18&nbsp;33&nbsp;19.1</td>
+  <td  bgcolor='#FFFFDD'>7.30</td>
+  <td  bgcolor='#EEEE99'>-31.61</td>
+  <td  bgcolor='#EEEE99'>-4.70</td>
+  <td  bgcolor='#FFFFDD'>  36.72</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-19.70</td>
+  <td align=center  bgcolor='#FFFFDD'>3468.82</td><td align=center  bgcolor='#FFFFDD'>2661.11</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960713075335|50277.3289930556|240.24338160349|-19.9394355303589|239.98506|-19.79045|8.00|-7.85|-7.12|0.04|0.03|-22.21|1418.70825444528|2411.83152393307|y|'>
+  <td  bgcolor='#FFFFDD'>960713075335</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-07-13&nbsp;07:53:45</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;00&nbsp;58.41</td>
+  <td  bgcolor='#FFFFDD'>-19&nbsp;56&nbsp;22.0</td>
+  <td  bgcolor='#EEEE99'>15&nbsp;59&nbsp;56.41</td>
+  <td  bgcolor='#EEEE99'>-19&nbsp;47&nbsp;25.6</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-7.85</td>
+  <td  bgcolor='#EEEE99'>-7.12</td>
+  <td  bgcolor='#FFFFDD'>  17.10</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-22.21</td>
+  <td align=center  bgcolor='#FFFFDD'>1418.71</td><td align=center  bgcolor='#FFFFDD'>2411.83</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960713082410|50277.3502314815|240.242358690795|-19.9404533515287|239.98134|-19.79381|8.00|-7.83|-7.12|0.04|0.03|-22.21|1412.33798926537|2405.8111956493|y|'>
+  <td  bgcolor='#FFFFDD'>960713082410</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-07-13&nbsp;08:24:20</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;00&nbsp;58.17</td>
+  <td  bgcolor='#FFFFDD'>-19&nbsp;56&nbsp;25.6</td>
+  <td  bgcolor='#EEEE99'>15&nbsp;59&nbsp;55.52</td>
+  <td  bgcolor='#EEEE99'>-19&nbsp;47&nbsp;37.7</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-7.83</td>
+  <td  bgcolor='#EEEE99'>-7.12</td>
+  <td  bgcolor='#FFFFDD'>  17.16</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-22.21</td>
+  <td align=center  bgcolor='#FFFFDD'>1412.34</td><td align=center  bgcolor='#FFFFDD'>2405.81</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960713085617|50277.3725347222|240.241287688557|-19.9415225265519|239.978535|-19.79727|8.00|-7.81|-7.12|0.04|0.03|-22.21|1408.36884262301|2399.72353457804|y|'>
+  <td  bgcolor='#FFFFDD'>960713085617</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-07-13&nbsp;08:56:27</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;00&nbsp;57.91</td>
+  <td  bgcolor='#FFFFDD'>-19&nbsp;56&nbsp;29.5</td>
+  <td  bgcolor='#EEEE99'>15&nbsp;59&nbsp;54.85</td>
+  <td  bgcolor='#EEEE99'>-19&nbsp;47&nbsp;50.2</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-7.81</td>
+  <td  bgcolor='#EEEE99'>-7.12</td>
+  <td  bgcolor='#FFFFDD'>  17.17</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-22.21</td>
+  <td align=center  bgcolor='#FFFFDD'>1408.37</td><td align=center  bgcolor='#FFFFDD'>2399.72</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960714070821|50278.2975810185|240.199738735091|-19.9861639402686|239.98758|-19.78584|8.00|-6.94|-7.21|0.04|0.03|-22.27|1527.82447134431|2543.073988118|y|'>
+  <td  bgcolor='#FFFFDD'>960714070821</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-07-14&nbsp;07:08:31</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;00&nbsp;47.94</td>
+  <td  bgcolor='#FFFFDD'>-19&nbsp;59&nbsp;10.2</td>
+  <td  bgcolor='#EEEE99'>15&nbsp;59&nbsp;57.02</td>
+  <td  bgcolor='#EEEE99'>-19&nbsp;47&nbsp;09.0</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-6.94</td>
+  <td  bgcolor='#EEEE99'>-7.21</td>
+  <td  bgcolor='#FFFFDD'>  16.96</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-22.27</td>
+  <td align=center  bgcolor='#FFFFDD'>1527.82</td><td align=center  bgcolor='#FFFFDD'>2543.07</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960714074557|50278.3236921296|240.19864696155|-19.9874325519985|239.98461|-19.78995|8.00|-6.92|-7.21|0.04|0.03|-22.27|1523.33110043556|2535.82110165367|y|'>
+  <td  bgcolor='#FFFFDD'>960714074557</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-07-14&nbsp;07:46:07</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;00&nbsp;47.68</td>
+  <td  bgcolor='#FFFFDD'>-19&nbsp;59&nbsp;14.8</td>
+  <td  bgcolor='#EEEE99'>15&nbsp;59&nbsp;56.31</td>
+  <td  bgcolor='#EEEE99'>-19&nbsp;47&nbsp;23.8</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-6.92</td>
+  <td  bgcolor='#EEEE99'>-7.21</td>
+  <td  bgcolor='#FFFFDD'>  16.92</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-22.27</td>
+  <td align=center  bgcolor='#FFFFDD'>1523.33</td><td align=center  bgcolor='#FFFFDD'>2535.82</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|960714081202|50278.3418055556|240.197891840089|-19.988313029408|239.981685|-19.7932|8.00|-6.90|-7.21|0.04|0.03|-22.27|1518.25600757915|2529.787404669|y|'>
+  <td  bgcolor='#FFFFDD'>960714081202</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1996-07-14&nbsp;08:12:12</td>
+  <td  bgcolor='#FFFFDD'>16&nbsp;00&nbsp;47.49</td>
+  <td  bgcolor='#FFFFDD'>-19&nbsp;59&nbsp;17.9</td>
+  <td  bgcolor='#EEEE99'>15&nbsp;59&nbsp;55.60</td>
+  <td  bgcolor='#EEEE99'>-19&nbsp;47&nbsp;35.5</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-6.90</td>
+  <td  bgcolor='#EEEE99'>-7.21</td>
+  <td  bgcolor='#FFFFDD'>  16.91</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-22.27</td>
+  <td align=center  bgcolor='#FFFFDD'>1518.26</td><td align=center  bgcolor='#FFFFDD'>2529.79</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|970902124958|50693.5348148148|344.004931958116|-23.6105280414664|343.813185|-24.29385|7.60|-30.02|-13.28|0.04|0.04|20.03|1606.54202841334|295.450158127142|y|'>
+  <td  bgcolor='#FFFFDD'>970902124958</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1997-09-02&nbsp;12:50:08</td>
+  <td  bgcolor='#FFFFDD'>22&nbsp;56&nbsp;01.18</td>
+  <td  bgcolor='#FFFFDD'>-23&nbsp;36&nbsp;37.9</td>
+  <td  bgcolor='#EEEE99'>22&nbsp;55&nbsp;15.16</td>
+  <td  bgcolor='#EEEE99'>-24&nbsp;17&nbsp;37.9</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.02</td>
+  <td  bgcolor='#EEEE99'>-13.28</td>
+  <td  bgcolor='#FFFFDD'>  42.33</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>20.03</td>
+  <td align=center  bgcolor='#FFFFDD'>1606.54</td><td align=center  bgcolor='#FFFFDD'>295.45</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|970902130337|50693.5442939815|344.002916496221|-23.6113489684992|343.815645|-24.29514|7.60|-30.02|-13.28|0.04|0.04|20.03|1617.21593453733|294.241036527859|y|'>
+  <td  bgcolor='#FFFFDD'>970902130337</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1997-09-02&nbsp;13:03:47</td>
+  <td  bgcolor='#FFFFDD'>22&nbsp;56&nbsp;00.70</td>
+  <td  bgcolor='#FFFFDD'>-23&nbsp;36&nbsp;40.9</td>
+  <td  bgcolor='#EEEE99'>22&nbsp;55&nbsp;15.75</td>
+  <td  bgcolor='#EEEE99'>-24&nbsp;17&nbsp;42.5</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.02</td>
+  <td  bgcolor='#EEEE99'>-13.28</td>
+  <td  bgcolor='#FFFFDD'>  42.29</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>20.03</td>
+  <td align=center  bgcolor='#FFFFDD'>1617.22</td><td align=center  bgcolor='#FFFFDD'>294.24</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|970902131840|50693.5547453704|344.000694284111|-23.6122538221765|343.807185|-24.29166|7.60|-30.02|-13.27|0.04|0.04|20.03|1602.70790790593|305.37301760844|y|'>
+  <td  bgcolor='#FFFFDD'>970902131840</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1997-09-02&nbsp;13:18:50</td>
+  <td  bgcolor='#FFFFDD'>22&nbsp;56&nbsp;00.17</td>
+  <td  bgcolor='#FFFFDD'>-23&nbsp;36&nbsp;44.1</td>
+  <td  bgcolor='#EEEE99'>22&nbsp;55&nbsp;13.72</td>
+  <td  bgcolor='#EEEE99'>-24&nbsp;17&nbsp;30.0</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.02</td>
+  <td  bgcolor='#EEEE99'>-13.27</td>
+  <td  bgcolor='#FFFFDD'>  42.12</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>20.03</td>
+  <td align=center  bgcolor='#FFFFDD'>1602.71</td><td align=center  bgcolor='#FFFFDD'>305.37</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|970928115204|50719.4946064815|339.013825180811|-24.8232994341343|338.972055|-24.38672|8.00|-21.35|-0.64|0.04|0.03|15.92|1922.27250854588|3147.17109454917|y|'>
+  <td  bgcolor='#FFFFDD'>970928115204</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1997-09-28&nbsp;11:52:14</td>
+  <td  bgcolor='#FFFFDD'>22&nbsp;36&nbsp;03.32</td>
+  <td  bgcolor='#FFFFDD'>-24&nbsp;49&nbsp;23.9</td>
+  <td  bgcolor='#EEEE99'>22&nbsp;35&nbsp;53.29</td>
+  <td  bgcolor='#EEEE99'>-24&nbsp;23&nbsp;12.2</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-21.35</td>
+  <td  bgcolor='#EEEE99'>-0.64</td>
+  <td  bgcolor='#FFFFDD'>  26.29</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>15.92</td>
+  <td align=center  bgcolor='#FFFFDD'>1922.27</td><td align=center  bgcolor='#FFFFDD'>3147.17</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|970928120556|50719.5042361111|339.012385842356|-24.8233349450712|338.9724|-24.38873|8.00|-21.35|-0.64|0.04|0.03|15.92|1926.21263902944|3142.11141950882|y|'>
+  <td  bgcolor='#FFFFDD'>970928120556</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1997-09-28&nbsp;12:06:06</td>
+  <td  bgcolor='#FFFFDD'>22&nbsp;36&nbsp;02.97</td>
+  <td  bgcolor='#FFFFDD'>-24&nbsp;49&nbsp;24.0</td>
+  <td  bgcolor='#EEEE99'>22&nbsp;35&nbsp;53.38</td>
+  <td  bgcolor='#EEEE99'>-24&nbsp;23&nbsp;19.4</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-21.35</td>
+  <td  bgcolor='#EEEE99'>-0.64</td>
+  <td  bgcolor='#FFFFDD'>  26.17</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>15.92</td>
+  <td align=center  bgcolor='#FFFFDD'>1926.21</td><td align=center  bgcolor='#FFFFDD'>3142.11</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|970928122003|50719.5140393519|339.010921011429|-24.8233707770436|338.961525|-24.38576|8.00|-21.34|-0.63|0.04|0.03|15.91|1904.19126388391|3149.48201865046|y|'>
+  <td  bgcolor='#FFFFDD'>970928122003</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1997-09-28&nbsp;12:20:13</td>
+  <td  bgcolor='#FFFFDD'>22&nbsp;36&nbsp;02.62</td>
+  <td  bgcolor='#FFFFDD'>-24&nbsp;49&nbsp;24.1</td>
+  <td  bgcolor='#EEEE99'>22&nbsp;35&nbsp;50.77</td>
+  <td  bgcolor='#EEEE99'>-24&nbsp;23&nbsp;08.7</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-21.34</td>
+  <td  bgcolor='#EEEE99'>-0.63</td>
+  <td  bgcolor='#FFFFDD'>  26.39</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>15.91</td>
+  <td align=center  bgcolor='#FFFFDD'>1904.19</td><td align=center  bgcolor='#FFFFDD'>3149.48</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|981116124603|51133.5320949074|68.3820526351142|17.1818644899536|67.7784|16.86131|7.20|-33.23|2.83|0.04|0.04|18.57|590.123272778291|1185.89535342038|y|'>
+  <td  bgcolor='#FFFFDD'>981116124603</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1998-11-16&nbsp;12:46:13</td>
+  <td  bgcolor='#FFFFDD'>04&nbsp;33&nbsp;31.69</td>
+  <td  bgcolor='#FFFFDD'>+17&nbsp;10&nbsp;54.7</td>
+  <td  bgcolor='#EEEE99'>04&nbsp;31&nbsp;06.82</td>
+  <td  bgcolor='#EEEE99'>+16&nbsp;51&nbsp;40.7</td>
+  <td  bgcolor='#FFFFDD'>7.20</td>
+  <td  bgcolor='#EEEE99'>-33.23</td>
+  <td  bgcolor='#EEEE99'>2.83</td>
+  <td  bgcolor='#FFFFDD'>  39.61</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>18.57</td>
+  <td align=center  bgcolor='#FFFFDD'>590.12</td><td align=center  bgcolor='#FFFFDD'>1185.90</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|981116130104|51133.5425231481|68.37968650713|17.1820415235963|67.783215|16.85993|7.19|-33.24|2.83|0.04|0.04|18.57|607.569850485219|1182.18107839162|y|'>
+  <td  bgcolor='#FFFFDD'>981116130104</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1998-11-16&nbsp;13:01:14</td>
+  <td  bgcolor='#FFFFDD'>04&nbsp;33&nbsp;31.12</td>
+  <td  bgcolor='#FFFFDD'>+17&nbsp;10&nbsp;55.3</td>
+  <td  bgcolor='#EEEE99'>04&nbsp;31&nbsp;07.97</td>
+  <td  bgcolor='#EEEE99'>+16&nbsp;51&nbsp;35.7</td>
+  <td  bgcolor='#FFFFDD'>7.19</td>
+  <td  bgcolor='#EEEE99'>-33.24</td>
+  <td  bgcolor='#EEEE99'>2.83</td>
+  <td  bgcolor='#FFFFDD'>  39.30</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>18.57</td>
+  <td align=center  bgcolor='#FFFFDD'>607.57</td><td align=center  bgcolor='#FFFFDD'>1182.18</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|981116131605|51133.5529513889|68.3773199647184|17.1822185760107|67.77777|16.86371|7.19|-33.24|2.83|0.04|0.04|18.57|600.393554425505|1191.37541016908|y|'>
+  <td  bgcolor='#FFFFDD'>981116131605</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>1998-11-16&nbsp;13:16:15</td>
+  <td  bgcolor='#FFFFDD'>04&nbsp;33&nbsp;30.56</td>
+  <td  bgcolor='#FFFFDD'>+17&nbsp;10&nbsp;56.0</td>
+  <td  bgcolor='#EEEE99'>04&nbsp;31&nbsp;06.66</td>
+  <td  bgcolor='#EEEE99'>+16&nbsp;51&nbsp;49.4</td>
+  <td  bgcolor='#FFFFDD'>7.19</td>
+  <td  bgcolor='#EEEE99'>-33.24</td>
+  <td  bgcolor='#EEEE99'>2.83</td>
+  <td  bgcolor='#FFFFDD'>  39.35</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>18.57</td>
+  <td align=center  bgcolor='#FFFFDD'>600.39</td><td align=center  bgcolor='#FFFFDD'>1191.38</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|000314153358|51617.6487037037|190.273273099463|13.905518556403|189.86544|13.66705|6.90|-29.12|14.83|0.06|0.04|-26.95|975.827090284091|1407.88433394578|n|'>
+  <td  bgcolor='#FFFFDD'>000314153358</td>
+  <td  bgcolor='#FFFFDD'>n</td>
+  <td  bgcolor='#EEEE99'>2000-03-14&nbsp;15:34:08</td>
+  <td  bgcolor='#FFFFDD'>12&nbsp;41&nbsp;05.59</td>
+  <td  bgcolor='#FFFFDD'>+13&nbsp;54&nbsp;19.9</td>
+  <td  bgcolor='#EEEE99'>12&nbsp;39&nbsp;27.71</td>
+  <td  bgcolor='#EEEE99'>+13&nbsp;40&nbsp;01.4</td>
+  <td  bgcolor='#FFFFDD'>6.90</td>
+  <td  bgcolor='#EEEE99'>-29.12</td>
+  <td  bgcolor='#EEEE99'>14.83</td>
+  <td  bgcolor='#FFFFDD'>  27.74</td>
+  <td  bgcolor='#EEEE99'>0.06</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>-26.95</td>
+  <td align=center  bgcolor='#FFFFDD'>975.83</td><td align=center  bgcolor='#FFFFDD'>1407.88</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|000328140101|51631.5841550926|187.343827004494|15.0188268950003|186.637395|15.2721|6.90|-32.42|9.10|0.06|0.04|-25.41|216.967381666326|2734.95934516344|y|'>
+  <td  bgcolor='#FFFFDD'>000328140101</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2000-03-28&nbsp;14:01:11</td>
+  <td  bgcolor='#FFFFDD'>12&nbsp;29&nbsp;22.52</td>
+  <td  bgcolor='#FFFFDD'>+15&nbsp;01&nbsp;07.8</td>
+  <td  bgcolor='#EEEE99'>12&nbsp;26&nbsp;32.97</td>
+  <td  bgcolor='#EEEE99'>+15&nbsp;16&nbsp;19.6</td>
+  <td  bgcolor='#FFFFDD'>6.90</td>
+  <td  bgcolor='#EEEE99'>-32.42</td>
+  <td  bgcolor='#EEEE99'>9.10</td>
+  <td  bgcolor='#FFFFDD'>  43.64</td>
+  <td  bgcolor='#EEEE99'>0.06</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>-25.41</td>
+  <td align=center  bgcolor='#FFFFDD'>216.97</td><td align=center  bgcolor='#FFFFDD'>2734.96</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|000328141732|51631.595625|187.341340352919|15.0195048428412|186.64266|15.2724|6.90|-32.42|9.09|0.06|0.04|-25.41|236.952956541801|2733.05500355126|y|'>
+  <td  bgcolor='#FFFFDD'>000328141732</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2000-03-28&nbsp;14:17:42</td>
+  <td  bgcolor='#FFFFDD'>12&nbsp;29&nbsp;21.92</td>
+  <td  bgcolor='#FFFFDD'>+15&nbsp;01&nbsp;10.2</td>
+  <td  bgcolor='#EEEE99'>12&nbsp;26&nbsp;34.24</td>
+  <td  bgcolor='#EEEE99'>+15&nbsp;16&nbsp;20.6</td>
+  <td  bgcolor='#FFFFDD'>6.90</td>
+  <td  bgcolor='#EEEE99'>-32.42</td>
+  <td  bgcolor='#EEEE99'>9.09</td>
+  <td  bgcolor='#FFFFDD'>  43.22</td>
+  <td  bgcolor='#EEEE99'>0.06</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>-25.41</td>
+  <td align=center  bgcolor='#FFFFDD'>236.95</td><td align=center  bgcolor='#FFFFDD'>2733.06</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|000328143247|51631.6062152778|187.33904444255|15.0201303978283|186.638085|15.2773|6.90|-32.42|9.09|0.06|0.04|-25.41|231.22912684378|2744.24710941895|y|'>
+  <td  bgcolor='#FFFFDD'>000328143247</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2000-03-28&nbsp;14:32:57</td>
+  <td  bgcolor='#FFFFDD'>12&nbsp;29&nbsp;21.37</td>
+  <td  bgcolor='#FFFFDD'>+15&nbsp;01&nbsp;12.5</td>
+  <td  bgcolor='#EEEE99'>12&nbsp;26&nbsp;33.14</td>
+  <td  bgcolor='#EEEE99'>+15&nbsp;16&nbsp;38.3</td>
+  <td  bgcolor='#FFFFDD'>6.90</td>
+  <td  bgcolor='#EEEE99'>-32.42</td>
+  <td  bgcolor='#EEEE99'>9.09</td>
+  <td  bgcolor='#FFFFDD'>  43.43</td>
+  <td  bgcolor='#EEEE99'>0.06</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>-25.41</td>
+  <td align=center  bgcolor='#FFFFDD'>231.23</td><td align=center  bgcolor='#FFFFDD'>2744.25</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|000430073356|51664.3153472222|181.832773815353|14.9029738085158|181.66254|15.26791|7.50|-14.01|-9.71|0.05|0.03|-23.15|1614.20874468157|3021.1064063976|y|'>
+  <td  bgcolor='#FFFFDD'>000430073356</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2000-04-30&nbsp;07:34:06</td>
+  <td  bgcolor='#FFFFDD'>12&nbsp;07&nbsp;19.87</td>
+  <td  bgcolor='#FFFFDD'>+14&nbsp;54&nbsp;10.7</td>
+  <td  bgcolor='#EEEE99'>12&nbsp;06&nbsp;39.01</td>
+  <td  bgcolor='#EEEE99'>+15&nbsp;16&nbsp;04.5</td>
+  <td  bgcolor='#FFFFDD'>7.50</td>
+  <td  bgcolor='#EEEE99'>-14.01</td>
+  <td  bgcolor='#EEEE99'>-9.71</td>
+  <td  bgcolor='#FFFFDD'>  24.01</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-23.15</td>
+  <td align=center  bgcolor='#FFFFDD'>1614.21</td><td align=center  bgcolor='#FFFFDD'>3021.11</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|000430074910|51664.3259259259|181.831839676261|14.902287339449|181.6674|15.26823|7.50|-14.00|-9.72|0.05|0.03|-23.15|1629.07617105943|3024.21272441233|y|'>
+  <td  bgcolor='#FFFFDD'>000430074910</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2000-04-30&nbsp;07:49:20</td>
+  <td  bgcolor='#FFFFDD'>12&nbsp;07&nbsp;19.64</td>
+  <td  bgcolor='#FFFFDD'>+14&nbsp;54&nbsp;08.2</td>
+  <td  bgcolor='#EEEE99'>12&nbsp;06&nbsp;40.18</td>
+  <td  bgcolor='#EEEE99'>+15&nbsp;16&nbsp;05.6</td>
+  <td  bgcolor='#FFFFDD'>7.50</td>
+  <td  bgcolor='#EEEE99'>-14.00</td>
+  <td  bgcolor='#EEEE99'>-9.72</td>
+  <td  bgcolor='#FFFFDD'>  23.93</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-23.15</td>
+  <td align=center  bgcolor='#FFFFDD'>1629.08</td><td align=center  bgcolor='#FFFFDD'>3024.21</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|000430080421|51664.3364699074|181.830909232406|14.9016025870884|181.66242|15.27379|7.50|-13.99|-9.72|0.05|0.03|-23.15|1619.04795933269|3041.76985083999|y|'>
+  <td  bgcolor='#FFFFDD'>000430080421</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2000-04-30&nbsp;08:04:31</td>
+  <td  bgcolor='#FFFFDD'>12&nbsp;07&nbsp;19.42</td>
+  <td  bgcolor='#FFFFDD'>+14&nbsp;54&nbsp;05.8</td>
+  <td  bgcolor='#EEEE99'>12&nbsp;06&nbsp;38.98</td>
+  <td  bgcolor='#EEEE99'>+15&nbsp;16&nbsp;25.6</td>
+  <td  bgcolor='#FFFFDD'>7.50</td>
+  <td  bgcolor='#EEEE99'>-13.99</td>
+  <td  bgcolor='#EEEE99'>-9.72</td>
+  <td  bgcolor='#FFFFDD'>  24.37</td>
+  <td  bgcolor='#EEEE99'>0.05</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>-23.15</td>
+  <td align=center  bgcolor='#FFFFDD'>1619.05</td><td align=center  bgcolor='#FFFFDD'>3041.77</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20020824101725b|52510.4291087963|21.6771426233905|-6.0473195772997|21.17697|-5.79617|8.20|-5.78|-11.05|0.04|0.03|31.04|262.419931655912|2946.25705019944|y|'>
+  <td  bgcolor='#FFFFDD'>20020824101725b</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-08-24&nbsp;10:17:55</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;26&nbsp;42.51</td>
+  <td  bgcolor='#FFFFDD'>-06&nbsp;02&nbsp;50.4</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;24&nbsp;42.47</td>
+  <td  bgcolor='#EEEE99'>-05&nbsp;47&nbsp;46.2</td>
+  <td  bgcolor='#FFFFDD'>8.20</td>
+  <td  bgcolor='#EEEE99'>-5.78</td>
+  <td  bgcolor='#EEEE99'>-11.05</td>
+  <td  bgcolor='#FFFFDD'>  33.44</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>31.04</td>
+  <td align=center  bgcolor='#FFFFDD'>262.42</td><td align=center  bgcolor='#FFFFDD'>2946.26</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20020824104139b|52510.4459375|21.6764899171674|-6.04854796819547|21.17949|-5.79796|8.20|-5.80|-11.05|0.04|0.03|31.04|273.744948793945|2943.87745059295|y|'>
+  <td  bgcolor='#FFFFDD'>20020824104139b</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-08-24&nbsp;10:42:09</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;26&nbsp;42.36</td>
+  <td  bgcolor='#FFFFDD'>-06&nbsp;02&nbsp;54.8</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;24&nbsp;43.08</td>
+  <td  bgcolor='#EEEE99'>-05&nbsp;47&nbsp;52.7</td>
+  <td  bgcolor='#FFFFDD'>8.20</td>
+  <td  bgcolor='#EEEE99'>-5.80</td>
+  <td  bgcolor='#EEEE99'>-11.05</td>
+  <td  bgcolor='#FFFFDD'>  33.25</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>31.04</td>
+  <td align=center  bgcolor='#FFFFDD'>273.74</td><td align=center  bgcolor='#FFFFDD'>2943.88</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20020824105634b|52510.4562962963|21.6760873340819|-6.04930431411413|21.175005|-5.79495|8.20|-5.81|-11.06|0.04|0.03|31.04|259.22123565526|2957.41456999268|y|'>
+  <td  bgcolor='#FFFFDD'>20020824105634b</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-08-24&nbsp;10:57:04</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;26&nbsp;42.26</td>
+  <td  bgcolor='#FFFFDD'>-06&nbsp;02&nbsp;57.5</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;24&nbsp;42.00</td>
+  <td  bgcolor='#EEEE99'>-05&nbsp;47&nbsp;41.8</td>
+  <td  bgcolor='#FFFFDD'>8.20</td>
+  <td  bgcolor='#EEEE99'>-5.81</td>
+  <td  bgcolor='#EEEE99'>-11.06</td>
+  <td  bgcolor='#FFFFDD'>  33.57</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>31.04</td>
+  <td align=center  bgcolor='#FFFFDD'>259.22</td><td align=center  bgcolor='#FFFFDD'>2957.41</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020908124027|52525.5282060185|20.4429868680242|-7.29398546072122|20.534595|-7.03975|7.90|-18.69|-13.56|0.04|0.03|29.97|2286.66516533265|2717.72877353199|y|'>
+  <td  bgcolor='#FFFFDD'>020908124027</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-08&nbsp;12:40:37</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;21&nbsp;46.32</td>
+  <td  bgcolor='#FFFFDD'>-07&nbsp;17&nbsp;38.3</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;22&nbsp;08.30</td>
+  <td  bgcolor='#EEEE99'>-07&nbsp;02&nbsp;23.1</td>
+  <td  bgcolor='#FFFFDD'>7.90</td>
+  <td  bgcolor='#EEEE99'>-18.69</td>
+  <td  bgcolor='#EEEE99'>-13.56</td>
+  <td  bgcolor='#FFFFDD'>  16.20</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>29.97</td>
+  <td align=center  bgcolor='#FFFFDD'>2286.67</td><td align=center  bgcolor='#FFFFDD'>2717.73</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020908125548|52525.5388657407|20.4416690979183|-7.29493978656837|20.54091|-7.0406|7.90|-18.70|-13.56|0.04|0.03|29.97|2306.9329458492|2717.91529582423|y|'>
+  <td  bgcolor='#FFFFDD'>020908125548</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-08&nbsp;12:55:58</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;21&nbsp;46.00</td>
+  <td  bgcolor='#FFFFDD'>-07&nbsp;17&nbsp;41.8</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;22&nbsp;09.82</td>
+  <td  bgcolor='#EEEE99'>-07&nbsp;02&nbsp;26.2</td>
+  <td  bgcolor='#FFFFDD'>7.90</td>
+  <td  bgcolor='#EEEE99'>-18.70</td>
+  <td  bgcolor='#EEEE99'>-13.56</td>
+  <td  bgcolor='#FFFFDD'>  16.36</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>29.97</td>
+  <td align=center  bgcolor='#FFFFDD'>2306.93</td><td align=center  bgcolor='#FFFFDD'>2717.92</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020908131043|52525.549224537|20.4403879565665|-7.29586722539876|20.537145|-7.03613|7.90|-18.70|-13.56|0.04|0.03|29.97|2300.50989754942|2732.38580613027|y|'>
+  <td  bgcolor='#FFFFDD'>020908131043</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-08&nbsp;13:10:53</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;21&nbsp;45.69</td>
+  <td  bgcolor='#FFFFDD'>-07&nbsp;17&nbsp;45.1</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;22&nbsp;08.91</td>
+  <td  bgcolor='#EEEE99'>-07&nbsp;02&nbsp;10.1</td>
+  <td  bgcolor='#FFFFDD'>7.90</td>
+  <td  bgcolor='#EEEE99'>-18.70</td>
+  <td  bgcolor='#EEEE99'>-13.56</td>
+  <td  bgcolor='#FFFFDD'>  16.61</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>29.97</td>
+  <td align=center  bgcolor='#FFFFDD'>2300.51</td><td align=center  bgcolor='#FFFFDD'>2732.39</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020911120523|52528.5038541667|20.0525507249623|-7.56226323766701|20.533755|-7.0374|7.88|-20.99|-13.72|0.04|0.03|29.69|3326.66045307258|3439.94553957736|y|'>
+  <td  bgcolor='#FFFFDD'>020911120523</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-11&nbsp;12:05:33</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;20&nbsp;12.61</td>
+  <td  bgcolor='#FFFFDD'>-07&nbsp;33&nbsp;44.1</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;22&nbsp;08.10</td>
+  <td  bgcolor='#EEEE99'>-07&nbsp;02&nbsp;14.6</td>
+  <td  bgcolor='#FFFFDD'>7.88</td>
+  <td  bgcolor='#EEEE99'>-20.99</td>
+  <td  bgcolor='#EEEE99'>-13.72</td>
+  <td  bgcolor='#FFFFDD'>  42.57</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>29.69</td>
+  <td align=center  bgcolor='#FFFFDD'>3326.66</td><td align=center  bgcolor='#FFFFDD'>3439.95</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020911122121|52528.5149421296|20.0510121745873|-7.56326817097508|20.540055|-7.03856|7.88|-21.00|-13.72|0.04|0.03|29.69|3347.66430578302|3439.51568998452|y|'>
+  <td  bgcolor='#FFFFDD'>020911122121</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-11&nbsp;12:21:31</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;20&nbsp;12.24</td>
+  <td  bgcolor='#FFFFDD'>-07&nbsp;33&nbsp;47.8</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;22&nbsp;09.61</td>
+  <td  bgcolor='#EEEE99'>-07&nbsp;02&nbsp;18.8</td>
+  <td  bgcolor='#FFFFDD'>7.88</td>
+  <td  bgcolor='#EEEE99'>-21.00</td>
+  <td  bgcolor='#EEEE99'>-13.72</td>
+  <td  bgcolor='#FFFFDD'>  42.87</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>29.69</td>
+  <td align=center  bgcolor='#FFFFDD'>3347.66</td><td align=center  bgcolor='#FFFFDD'>3439.52</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020911123701|52528.5258217593|20.0495019395356|-7.56425424977337|20.536455|-7.03442|7.88|-21.00|-13.72|0.04|0.03|29.69|3342.23247056612|3453.20671454781|y|'>
+  <td  bgcolor='#FFFFDD'>020911123701</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-11&nbsp;12:37:11</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;20&nbsp;11.88</td>
+  <td  bgcolor='#FFFFDD'>-07&nbsp;33&nbsp;51.3</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;22&nbsp;08.75</td>
+  <td  bgcolor='#EEEE99'>-07&nbsp;02&nbsp;03.9</td>
+  <td  bgcolor='#FFFFDD'>7.88</td>
+  <td  bgcolor='#EEEE99'>-21.00</td>
+  <td  bgcolor='#EEEE99'>-13.72</td>
+  <td  bgcolor='#FFFFDD'>  43.02</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>29.69</td>
+  <td align=center  bgcolor='#FFFFDD'>3342.23</td><td align=center  bgcolor='#FFFFDD'>3453.21</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20020919105507c|52536.4552893519|18.8040155919391|-8.28163053112432|18.492855|-8.00278|7.70|-26.35|-13.52|0.04|0.04|28.86|941.893863826796|3044.07775670691|y|'>
+  <td  bgcolor='#FFFFDD'>20020919105507c</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-19&nbsp;10:55:37</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;15&nbsp;12.96</td>
+  <td  bgcolor='#FFFFDD'>-08&nbsp;16&nbsp;53.9</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;13&nbsp;58.29</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;00&nbsp;10.0</td>
+  <td  bgcolor='#FFFFDD'>7.70</td>
+  <td  bgcolor='#EEEE99'>-26.35</td>
+  <td  bgcolor='#EEEE99'>-13.52</td>
+  <td  bgcolor='#FFFFDD'>  24.93</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>28.86</td>
+  <td align=center  bgcolor='#FFFFDD'>941.89</td><td align=center  bgcolor='#FFFFDD'>3044.08</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20020919111009c|52536.4657291667|18.802199640591|-8.28256219923245|18.491385|-8.00438|7.70|-26.35|-13.52|0.04|0.04|28.85|943.303421537327|3041.2869030378|y|'>
+  <td  bgcolor='#FFFFDD'>20020919111009c</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-19&nbsp;11:10:39</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;15&nbsp;12.53</td>
+  <td  bgcolor='#FFFFDD'>-08&nbsp;16&nbsp;57.2</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;13&nbsp;57.93</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;00&nbsp;15.8</td>
+  <td  bgcolor='#FFFFDD'>7.70</td>
+  <td  bgcolor='#EEEE99'>-26.35</td>
+  <td  bgcolor='#EEEE99'>-13.52</td>
+  <td  bgcolor='#FFFFDD'>  24.89</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>28.85</td>
+  <td align=center  bgcolor='#FFFFDD'>943.30</td><td align=center  bgcolor='#FFFFDD'>3041.29</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20020919112520c|52536.4762731481|18.8003651426524|-8.2835031005747|18.482385|-8.00499|7.70|-26.36|-13.52|0.04|0.04|28.85|917.747146129752|3042.91555693529|y|'>
+  <td  bgcolor='#FFFFDD'>20020919112520c</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-19&nbsp;11:25:50</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;15&nbsp;12.09</td>
+  <td  bgcolor='#FFFFDD'>-08&nbsp;17&nbsp;00.6</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;13&nbsp;55.77</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;00&nbsp;18.0</td>
+  <td  bgcolor='#FFFFDD'>7.70</td>
+  <td  bgcolor='#EEEE99'>-26.36</td>
+  <td  bgcolor='#EEEE99'>-13.52</td>
+  <td  bgcolor='#FFFFDD'>  25.22</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>28.85</td>
+  <td align=center  bgcolor='#FFFFDD'>917.75</td><td align=center  bgcolor='#FFFFDD'>3042.92</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928122935|52545.5206597222|17.0873878778999|-9.05469049007085|17.33805|-8.59006|7.60|-30.68|-12.11|0.04|0.04|27.83|2709.62975216611|3278.75956926838|y|'>
+  <td  bgcolor='#FFFFDD'>020928122935</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;12:29:45</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;20.97</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;16.9</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;21.13</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;24.2</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.68</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  31.59</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>27.83</td>
+  <td align=center  bgcolor='#FFFFDD'>2709.63</td><td align=center  bgcolor='#FFFFDD'>3278.76</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928122935|52545.5206597222|17.0873878778999|-9.05469049007085|17.33805|-8.59006|7.60|-30.68|-12.11|0.04|0.04|27.83|2709.62975216611|3278.75956926838|y|'>
+  <td  bgcolor='#FFFFDD'>020928122935</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;12:29:45</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;20.97</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;16.9</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;21.13</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;24.2</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.68</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  31.59</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>27.83</td>
+  <td align=center  bgcolor='#FFFFDD'>2709.63</td><td align=center  bgcolor='#FFFFDD'>3278.76</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928122935|52545.5206597222|17.0873878778999|-9.05469049007085|17.33805|-8.59006|7.60|-30.68|-12.11|0.04|0.04|27.83|2709.62975216611|3278.75956926838|y|'>
+  <td  bgcolor='#FFFFDD'>020928122935</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;12:29:45</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;20.97</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;16.9</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;21.13</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;24.2</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.68</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  31.59</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>27.83</td>
+  <td align=center  bgcolor='#FFFFDD'>2709.63</td><td align=center  bgcolor='#FFFFDD'>3278.76</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928124512|52545.5315046296|17.0851930743081|-9.05555696064061|17.343585|-8.58992|7.60|-30.68|-12.11|0.04|0.04|27.83|2730.22613815489|3281.77205869227|y|'>
+  <td  bgcolor='#FFFFDD'>020928124512</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;12:45:22</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;20.45</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;20.0</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;22.46</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;23.7</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.68</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  31.86</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>27.83</td>
+  <td align=center  bgcolor='#FFFFDD'>2730.23</td><td align=center  bgcolor='#FFFFDD'>3281.77</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928124512|52545.5315046296|17.0851930743081|-9.05555696064061|17.343585|-8.58992|7.60|-30.68|-12.11|0.04|0.04|27.83|2730.22613815489|3281.77205869227|y|'>
+  <td  bgcolor='#FFFFDD'>020928124512</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;12:45:22</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;20.45</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;20.0</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;22.46</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;23.7</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.68</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  31.86</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>27.83</td>
+  <td align=center  bgcolor='#FFFFDD'>2730.23</td><td align=center  bgcolor='#FFFFDD'>3281.77</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928124512|52545.5315046296|17.0851930743081|-9.05555696064061|17.343585|-8.58992|7.60|-30.68|-12.11|0.04|0.04|27.83|2730.22613815489|3281.77205869227|y|'>
+  <td  bgcolor='#FFFFDD'>020928124512</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;12:45:22</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;20.45</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;20.0</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;22.46</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;23.7</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.68</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  31.86</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>27.83</td>
+  <td align=center  bgcolor='#FFFFDD'>2730.23</td><td align=center  bgcolor='#FFFFDD'>3281.77</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928130056|52545.5424305556|17.082981601754|-9.05642972836647|17.339235|-8.58464|7.60|-30.69|-12.11|0.04|0.03|27.82|2724.50110706186|3297.96275497435|y|'>
+  <td  bgcolor='#FFFFDD'>020928130056</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;13:01:06</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;19.92</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;23.1</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;21.42</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;04.7</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.69</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  32.13</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>27.82</td>
+  <td align=center  bgcolor='#FFFFDD'>2724.50</td><td align=center  bgcolor='#FFFFDD'>3297.96</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928130056|52545.5424305556|17.082981601754|-9.05642972836647|17.339235|-8.58464|7.60|-30.69|-12.11|0.04|0.03|27.82|2724.50110706186|3297.96275497435|y|'>
+  <td  bgcolor='#FFFFDD'>020928130056</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;13:01:06</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;19.92</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;23.1</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;21.42</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;04.7</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.69</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  32.13</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>27.82</td>
+  <td align=center  bgcolor='#FFFFDD'>2724.50</td><td align=center  bgcolor='#FFFFDD'>3297.96</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|020928130056|52545.5424305556|17.082981601754|-9.05642972836647|17.339235|-8.58464|7.60|-30.69|-12.11|0.04|0.03|27.82|2724.50110706186|3297.96275497435|y|'>
+  <td  bgcolor='#FFFFDD'>020928130056</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-09-28&nbsp;13:01:06</td>
+  <td  bgcolor='#FFFFDD'>01&nbsp;08&nbsp;19.92</td>
+  <td  bgcolor='#FFFFDD'>-09&nbsp;03&nbsp;23.1</td>
+  <td  bgcolor='#EEEE99'>01&nbsp;09&nbsp;21.42</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;35&nbsp;04.7</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-30.69</td>
+  <td  bgcolor='#EEEE99'>-12.11</td>
+  <td  bgcolor='#FFFFDD'>  32.13</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>27.82</td>
+  <td align=center  bgcolor='#FFFFDD'>2724.50</td><td align=center  bgcolor='#FFFFDD'>3297.96</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021016070922a|52563.2985185185|13.3354595246961|-10.1482769653105|12.779595|-10.56456|7.60|-31.59|-5.90|0.04|0.04|25.87|75.9266256580453|559.227780295004|y|'>
+  <td  bgcolor='#FFFFDD'>20021016070922a</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-16&nbsp;07:09:52</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;53&nbsp;20.51</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;08&nbsp;53.8</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;51&nbsp;07.10</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;33&nbsp;52.4</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-31.59</td>
+  <td  bgcolor='#EEEE99'>-5.90</td>
+  <td  bgcolor='#FFFFDD'>  41.23</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>25.87</td>
+  <td align=center  bgcolor='#FFFFDD'>75.93</td><td align=center  bgcolor='#FFFFDD'>559.23</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021016071238a|52563.300787037|13.3349888278485|-10.1483648425091|13.914735|-10.56459|7.60|-31.59|-5.90|0.04|0.04|25.87|4077.35109748536|544.813713178151|y|'>
+  <td  bgcolor='#FFFFDD'>20021016071238a</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-16&nbsp;07:13:08</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;53&nbsp;20.40</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;08&nbsp;54.1</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;55&nbsp;39.54</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;33&nbsp;52.5</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-31.59</td>
+  <td  bgcolor='#EEEE99'>-5.90</td>
+  <td  bgcolor='#FFFFDD'>  42.36</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>25.87</td>
+  <td align=center  bgcolor='#FFFFDD'>4077.35</td><td align=center  bgcolor='#FFFFDD'>544.81</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021016073940a|52563.3195601852|13.3310939162132|-10.1490914896965|12.77295|-10.56581|7.60|-31.59|-5.90|0.04|0.04|25.87|67.8614340933982|557.98042795511|y|'>
+  <td  bgcolor='#FFFFDD'>20021016073940a</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-16&nbsp;07:40:10</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;53&nbsp;19.46</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;08&nbsp;56.7</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;51&nbsp;05.51</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;33&nbsp;56.9</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-31.59</td>
+  <td  bgcolor='#EEEE99'>-5.90</td>
+  <td  bgcolor='#FFFFDD'>  41.36</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>25.87</td>
+  <td align=center  bgcolor='#FFFFDD'>67.86</td><td align=center  bgcolor='#FFFFDD'>557.98</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021016074622a|52563.324212963|13.3301286882459|-10.1492714232153|13.907025|-10.56601|7.60|-31.58|-5.89|0.04|0.04|25.87|4067.34891865363|542.948511733414|y|'>
+  <td  bgcolor='#FFFFDD'>20021016074622a</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-16&nbsp;07:46:52</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;53&nbsp;19.23</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;08&nbsp;57.4</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;55&nbsp;37.69</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;33&nbsp;57.6</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-31.58</td>
+  <td  bgcolor='#EEEE99'>-5.89</td>
+  <td  bgcolor='#FFFFDD'>  42.24</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>25.87</td>
+  <td align=center  bgcolor='#FFFFDD'>4067.35</td><td align=center  bgcolor='#FFFFDD'>542.95</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021016081414a|52563.3435648148|13.3261145156344|-10.1500191203523|12.75816|-10.56706|7.60|-31.58|-5.88|0.04|0.04|25.87|33.6167930445354|557.05405225023|y|'>
+  <td  bgcolor='#FFFFDD'>20021016081414a</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-16&nbsp;08:14:44</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;53&nbsp;18.27</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;09&nbsp;00.1</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;51&nbsp;01.96</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;34&nbsp;01.4</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-31.58</td>
+  <td  bgcolor='#EEEE99'>-5.88</td>
+  <td  bgcolor='#FFFFDD'>  41.83</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>25.87</td>
+  <td align=center  bgcolor='#FFFFDD'>33.62</td><td align=center  bgcolor='#FFFFDD'>557.05</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021016082623a|52563.3520023148|13.3243645227568|-10.1503447746238|13.89018|-10.56784|7.60|-31.58|-5.88|0.04|0.04|25.87|4028.32121903019|540.357102643096|y|'>
+  <td  bgcolor='#FFFFDD'>20021016082623a</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-16&nbsp;08:26:53</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;53&nbsp;17.85</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;09&nbsp;01.2</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;55&nbsp;33.64</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;34&nbsp;04.2</td>
+  <td  bgcolor='#FFFFDD'>7.60</td>
+  <td  bgcolor='#EEEE99'>-31.58</td>
+  <td  bgcolor='#EEEE99'>-5.88</td>
+  <td  bgcolor='#FFFFDD'>  41.75</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>25.87</td>
+  <td align=center  bgcolor='#FFFFDD'>4028.32</td><td align=center  bgcolor='#FFFFDD'>540.36</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021025023533b|52572.1083680556|11.597686903571|-10.3713572351466|11.189655|-10.03467|7.80|-28.25|-1.79|0.04|0.03|25.13|609.104196620455|3249.28797618183|y|'>
+  <td  bgcolor='#FFFFDD'>20021025023533b</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-25&nbsp;02:36:03</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;46&nbsp;23.44</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;22&nbsp;16.9</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;44&nbsp;45.52</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;02&nbsp;04.8</td>
+  <td  bgcolor='#FFFFDD'>7.80</td>
+  <td  bgcolor='#EEEE99'>-28.25</td>
+  <td  bgcolor='#EEEE99'>-1.79</td>
+  <td  bgcolor='#FFFFDD'>  31.44</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>25.13</td>
+  <td align=center  bgcolor='#FFFFDD'>609.10</td><td align=center  bgcolor='#FFFFDD'>3249.29</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021025030542b|52572.1293055556|11.5938229656674|-10.3715979515869|11.187315|-10.02878|7.80|-28.24|-1.78|0.04|0.03|25.13|613.603373070505|3271.95837859977|y|'>
+  <td  bgcolor='#FFFFDD'>20021025030542b</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-25&nbsp;03:06:12</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;46&nbsp;22.52</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;22&nbsp;17.8</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;44&nbsp;44.96</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;01&nbsp;43.6</td>
+  <td  bgcolor='#FFFFDD'>7.80</td>
+  <td  bgcolor='#EEEE99'>-28.24</td>
+  <td  bgcolor='#EEEE99'>-1.78</td>
+  <td  bgcolor='#FFFFDD'>  31.61</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>25.13</td>
+  <td align=center  bgcolor='#FFFFDD'>613.60</td><td align=center  bgcolor='#FFFFDD'>3271.96</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021025033557b|52572.1503125|11.5899477179612|-10.3718380590454|11.180025|-10.02307|7.80|-28.23|-1.77|0.04|0.03|25.13|601.241603587074|3293.58147018765|y|'>
+  <td  bgcolor='#FFFFDD'>20021025033557b</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-25&nbsp;03:36:27</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;46&nbsp;21.59</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;22&nbsp;18.6</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;44&nbsp;43.21</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;01&nbsp;23.1</td>
+  <td  bgcolor='#FFFFDD'>7.80</td>
+  <td  bgcolor='#EEEE99'>-28.23</td>
+  <td  bgcolor='#EEEE99'>-1.77</td>
+  <td  bgcolor='#FFFFDD'>  32.00</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>25.13</td>
+  <td align=center  bgcolor='#FFFFDD'>601.24</td><td align=center  bgcolor='#FFFFDD'>3293.58</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|021029111413|52576.4683217593|10.8276879268972|-10.3911492815491|10.755135|-10.29604|7.90|-25.84|0.33|0.04|0.03|24.85|1849.80399938442|2295.48795505293|y|'>
+  <td  bgcolor='#FFFFDD'>021029111413</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-29&nbsp;11:14:23</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;43&nbsp;18.65</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;23&nbsp;28.1</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;43&nbsp;01.23</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;17&nbsp;45.7</td>
+  <td  bgcolor='#FFFFDD'>7.90</td>
+  <td  bgcolor='#EEEE99'>-25.84</td>
+  <td  bgcolor='#EEEE99'>0.33</td>
+  <td  bgcolor='#FFFFDD'>   7.13</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.85</td>
+  <td align=center  bgcolor='#FFFFDD'>1849.80</td><td align=center  bgcolor='#FFFFDD'>2295.49</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|021029113007|52576.4793634259|10.8258320813652|-10.3911220986839|10.759995|-10.29521|7.90|-25.83|0.33|0.04|0.03|24.85|1868.59551237592|2297.0932856624|y|'>
+  <td  bgcolor='#FFFFDD'>021029113007</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-29&nbsp;11:30:17</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;43&nbsp;18.20</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;23&nbsp;28.0</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;43&nbsp;02.40</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;17&nbsp;42.8</td>
+  <td  bgcolor='#FFFFDD'>7.90</td>
+  <td  bgcolor='#EEEE99'>-25.83</td>
+  <td  bgcolor='#EEEE99'>0.33</td>
+  <td  bgcolor='#FFFFDD'>   6.94</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.85</td>
+  <td align=center  bgcolor='#FFFFDD'>1868.60</td><td align=center  bgcolor='#FFFFDD'>2297.09</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|021029114521|52576.4899421296|10.8240545255419|-10.3910956892572|10.75542|-10.29024|7.90|-25.82|0.34|0.04|0.03|24.85|1861.32014076682|2310.4217659313|y|'>
+  <td  bgcolor='#FFFFDD'>021029114521</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-10-29&nbsp;11:45:31</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;43&nbsp;17.77</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;23&nbsp;27.9</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;43&nbsp;01.30</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;17&nbsp;24.9</td>
+  <td  bgcolor='#FFFFDD'>7.90</td>
+  <td  bgcolor='#EEEE99'>-25.82</td>
+  <td  bgcolor='#EEEE99'>0.34</td>
+  <td  bgcolor='#FFFFDD'>   7.28</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.85</td>
+  <td align=center  bgcolor='#FFFFDD'>1861.32</td><td align=center  bgcolor='#FFFFDD'>2310.42</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|021102095708|52580.4147916667|10.1976879515535|-10.3563297366547|10.755555|-10.3007|7.91|-23.28|2.25|0.04|0.03|24.66|3509.65096156708|2181.14446074165|y|'>
+  <td  bgcolor='#FFFFDD'>021102095708</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-11-02&nbsp;09:57:18</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;40&nbsp;47.45</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;21&nbsp;22.8</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;43&nbsp;01.33</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;18&nbsp;02.5</td>
+  <td  bgcolor='#FFFFDD'>7.91</td>
+  <td  bgcolor='#EEEE99'>-23.28</td>
+  <td  bgcolor='#EEEE99'>2.25</td>
+  <td  bgcolor='#FFFFDD'>  33.10</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.66</td>
+  <td align=center  bgcolor='#FFFFDD'>3509.65</td><td align=center  bgcolor='#FFFFDD'>2181.14</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|021102101230|52580.425462963|10.1960790569879|-10.3561674385679|10.76097|-10.30057|7.91|-23.27|2.25|0.04|0.03|24.66|3527.76029408297|2181.26390731491|y|'>
+  <td  bgcolor='#FFFFDD'>021102101230</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-11-02&nbsp;10:12:40</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;40&nbsp;47.06</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;21&nbsp;22.2</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;43&nbsp;02.63</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;18&nbsp;02.1</td>
+  <td  bgcolor='#FFFFDD'>7.91</td>
+  <td  bgcolor='#EEEE99'>-23.27</td>
+  <td  bgcolor='#EEEE99'>2.25</td>
+  <td  bgcolor='#FFFFDD'>  33.51</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.66</td>
+  <td align=center  bgcolor='#FFFFDD'>3527.76</td><td align=center  bgcolor='#FFFFDD'>2181.26</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|021102102752|52580.4361342593|10.1944706915549|-10.3560047738696|10.756845|-10.29529|7.91|-23.26|2.26|0.04|0.03|24.66|3522.04370446177|2194.61099891645|y|'>
+  <td  bgcolor='#FFFFDD'>021102102752</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-11-02&nbsp;10:28:02</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;40&nbsp;46.67</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;21&nbsp;21.6</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;43&nbsp;01.64</td>
+  <td  bgcolor='#EEEE99'>-10&nbsp;17&nbsp;43.0</td>
+  <td  bgcolor='#FFFFDD'>7.91</td>
+  <td  bgcolor='#EEEE99'>-23.26</td>
+  <td  bgcolor='#EEEE99'>2.26</td>
+  <td  bgcolor='#FFFFDD'>  33.40</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.66</td>
+  <td align=center  bgcolor='#FFFFDD'>3522.04</td><td align=center  bgcolor='#FFFFDD'>2194.61</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021105020039c|52583.0841319444|9.81226429251781|-10.3043983785602|9.78693|-9.83032|8.00|-21.37|3.54|0.04|0.03|24.56|1959.36336911892|3737.64441416978|y|'>
+  <td  bgcolor='#FFFFDD'>20021105020039c</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-11-05&nbsp;02:01:09</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;39&nbsp;14.94</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;18&nbsp;15.8</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;39&nbsp;08.86</td>
+  <td  bgcolor='#EEEE99'>-09&nbsp;49&nbsp;49.2</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-21.37</td>
+  <td  bgcolor='#EEEE99'>3.54</td>
+  <td  bgcolor='#FFFFDD'>  28.48</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.56</td>
+  <td align=center  bgcolor='#FFFFDD'>1959.36</td><td align=center  bgcolor='#FFFFDD'>3737.64</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021105023045c|52583.1050347222|9.80938364985952|-10.3039024131104|9.78573|-9.82556|8.00|-21.36|3.55|0.04|0.03|24.56|1965.05770877233|3753.08473848366|y|'>
+  <td  bgcolor='#FFFFDD'>20021105023045c</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-11-05&nbsp;02:31:15</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;39&nbsp;14.25</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;18&nbsp;14.0</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;39&nbsp;08.58</td>
+  <td  bgcolor='#EEEE99'>-09&nbsp;49&nbsp;32.0</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-21.36</td>
+  <td  bgcolor='#EEEE99'>3.55</td>
+  <td  bgcolor='#FFFFDD'>  28.73</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.56</td>
+  <td align=center  bgcolor='#FFFFDD'>1965.06</td><td align=center  bgcolor='#FFFFDD'>3753.08</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|20021105030058c|52583.1260185185|9.80649405602246|-10.303403124095|9.779265|-9.82053|8.00|-21.34|3.56|0.04|0.03|24.56|1952.29956725051|3769.4229155524|y|'>
+  <td  bgcolor='#FFFFDD'>20021105030058c</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-11-05&nbsp;03:01:28</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;39&nbsp;13.56</td>
+  <td  bgcolor='#FFFFDD'>-10&nbsp;18&nbsp;12.3</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;39&nbsp;07.02</td>
+  <td  bgcolor='#EEEE99'>-09&nbsp;49&nbsp;13.9</td>
+  <td  bgcolor='#FFFFDD'>8.00</td>
+  <td  bgcolor='#EEEE99'>-21.34</td>
+  <td  bgcolor='#EEEE99'>3.56</td>
+  <td  bgcolor='#FFFFDD'>  29.02</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>24.56</td>
+  <td align=center  bgcolor='#FFFFDD'>1952.30</td><td align=center  bgcolor='#FFFFDD'>3769.42</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|021201074455|52609.322974537|8.09213181421198|-8.69023431141186|7.321365|-8.71666|8.40|0.50|14.26|0.03|0.03|25.04|-4.0520288230429|1983.53638092451|y|'>
+  <td  bgcolor='#FFFFDD'>021201074455</td>
+  <td  bgcolor='#FFFFDD'>y</td>
+  <td  bgcolor='#EEEE99'>2002-12-01&nbsp;07:45:05</td>
+  <td  bgcolor='#FFFFDD'>00&nbsp;32&nbsp;22.11</td>
+  <td  bgcolor='#FFFFDD'>-08&nbsp;41&nbsp;24.8</td>
+  <td  bgcolor='#EEEE99'>00&nbsp;29&nbsp;17.13</td>
+  <td  bgcolor='#EEEE99'>-08&nbsp;43&nbsp;00.0</td>
+  <td  bgcolor='#FFFFDD'>8.40</td>
+  <td  bgcolor='#EEEE99'>0.50</td>
+  <td  bgcolor='#EEEE99'>14.26</td>
+  <td  bgcolor='#FFFFDD'>  45.74</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>25.04</td>
+  <td align=center  bgcolor='#FFFFDD'>-4.05</td><td align=center  bgcolor='#FFFFDD'>1983.54</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|060531140918|53886.5899074074|331.132058639003|-21.2883980240016|331.48413|-20.75049|8.70|19.89|-4.77|0.04|0.03|16.30|2924.38125537583|3478.62960480464|n|'>
+  <td  bgcolor='#FFFFDD'>060531140918</td>
+  <td  bgcolor='#FFFFDD'>n</td>
+  <td  bgcolor='#EEEE99'>2006-05-31&nbsp;14:09:28</td>
+  <td  bgcolor='#FFFFDD'>22&nbsp;04&nbsp;31.69</td>
+  <td  bgcolor='#FFFFDD'>-21&nbsp;17&nbsp;18.2</td>
+  <td  bgcolor='#EEEE99'>22&nbsp;05&nbsp;56.19</td>
+  <td  bgcolor='#EEEE99'>-20&nbsp;45&nbsp;01.8</td>
+  <td  bgcolor='#FFFFDD'>8.70</td>
+  <td  bgcolor='#EEEE99'>19.89</td>
+  <td  bgcolor='#EEEE99'>-4.77</td>
+  <td  bgcolor='#FFFFDD'>  37.82</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>16.30</td>
+  <td align=center  bgcolor='#FFFFDD'>2924.38</td><td align=center  bgcolor='#FFFFDD'>3478.63</td>
+</tr>
+<tr>
+<td  bgcolor='#FFDDDD'><input type=checkbox name=Check_NEAT value='|060531142435|53886.6005208333|331.133534264518|-21.2887175603563|331.48887|-20.75139|8.70|19.88|-4.77|0.04|0.03|16.30|2932.37910152844|3474.92021189386|n|'>
+  <td  bgcolor='#FFFFDD'>060531142435</td>
+  <td  bgcolor='#FFFFDD'>n</td>
+  <td  bgcolor='#EEEE99'>2006-05-31&nbsp;14:24:45</td>
+  <td  bgcolor='#FFFFDD'>22&nbsp;04&nbsp;32.05</td>
+  <td  bgcolor='#FFFFDD'>-21&nbsp;17&nbsp;19.4</td>
+  <td  bgcolor='#EEEE99'>22&nbsp;05&nbsp;57.33</td>
+  <td  bgcolor='#EEEE99'>-20&nbsp;45&nbsp;05.0</td>
+  <td  bgcolor='#FFFFDD'>8.70</td>
+  <td  bgcolor='#EEEE99'>19.88</td>
+  <td  bgcolor='#EEEE99'>-4.77</td>
+  <td  bgcolor='#FFFFDD'>  37.89</td>
+  <td  bgcolor='#EEEE99'>0.04</td>
+  <td  bgcolor='#EEEE99'>0.03</td>
+  <td  bgcolor='#EEEE99'>16.30</td>
+  <td align=center  bgcolor='#FFFFDD'>2932.38</td><td align=center  bgcolor='#FFFFDD'>3474.92</td>
+</tr>
+</table>
+<table border><tr><td><table>
+  <tr>
+    <th colspan=4 align=center  bgcolor='#FFDDDD'> Request Parameters </th>
+  </tr>
+  <tr>
+    <td  bgcolor='#FFDDDD' align=right> <label >Use Position:</label> </td>
+    <td align=left  bgcolor='#FFDDDD'> Position of moving object </td>
+    <td  bgcolor='#FFDDDD' align=right > <label for=Npixel> NEAT Pixels:</label> </td>
+    <td  bgcolor='#FFDDDD' align=right>
+      <input id=Npixel name=Npixel value=300>
+    </td>
+  </tr>
+  <tr>
+    <td  bgcolor='#FFDDDD' align=right><label for=Singlets> Show Singlets:</label> </td>
+    <td  bgcolor='#FFDDDD' align=left ><input id=Singlets name=Singlets type=checkbox checked></td>
+    <td  bgcolor='#FFDDDD' align=right> <label for=Triplets> Show Triplets:</label> </td>
+    <td  bgcolor='#FFDDDD' align=left ><input id=Triplets name=Triplets type=checkbox></td>
+  </tr>
+  
+  <tr>
+    <td  bgcolor='#FFDDDD' align=right> <label for=Scaling>  Scaling:</label></td>
+    <td  bgcolor='#FFDDDD' align=left>
+      <select id=Scaling name=Scaling>
+        <option selected> Log
+        <option> Linear
+        <option> HistEq
+      </select>
+    </td>
+    <td  bgcolor='#FFDDDD' align=right> <label for=Extremum> Extremum cutoff: </label></td>
+    <td  bgcolor='#FFDDDD' align=left>
+      <select id=Extremum name=Extremum>
+        <option selected value='Dft' > Default 
+        <option value=0.0000000001> 0
+        <option value=0.005> 0.5%
+        <option value=0.001> 0.1%
+        <option value=0.005> 0.5%
+        <option value=0.01 > 1%
+        <option value=0.02 > 2%
+        <option value=0.05 > 5%
+        <option value=0.10 > 10%
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th colspan=4 align=center  bgcolor='#DDDDFF'>
+       SkyView Comparisons
+    </th>
+  </tr>
+  <tr>
+    <td align=right  bgcolor='#DDDDFF'>
+      <label for=SkyView> DSS Image:</label>
+    </td>
+    <td align=left  bgcolor='#DDDDFF'>
+       <input id=SkyView name=SkyView type=checkbox checked>
+    </td>
+    <td align=right  bgcolor='#DDDDFF'> <label for=SkyOver>NEAT/DSS SkyView overlay:</label></td>
+    <td align=left  bgcolor='#DDDDFF'> <input id=SkyOver name=SkyOver type=checkbox checked> </td>
+  </tr>
+  <tr>
+     <td align=right  bgcolor='#DDDDFF'> <label for=OverSize> # Pixels </label></td>
+     <td align=left   bgcolor='#DDDDFF'> <input id=OverSize name=OverSize value=300></td>
+     <td align=right  bgcolor='#DDDDFF'> <label for=OverScale> Pixel Scale: </label></td>
+     <td align=left   bgcolor='#DDDDFF'> <input id=OverScale name=OverScale value=0.5></td>
+  </tr>
+</table>
+<tr><td><input type=submit value='Display Images'><input type=reset></td></tr></table>
+<br>
+</form></body></html>
