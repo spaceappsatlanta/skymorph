@@ -12,7 +12,7 @@ namespace :spec do
   end
 
   desc "Run all specs"
-  task :all => [:unit, :integration]
+  task :full => [:unit, :integration]
 end
 
 task :default => "spec:unit"
