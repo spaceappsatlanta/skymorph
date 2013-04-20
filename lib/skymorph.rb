@@ -13,5 +13,9 @@ require "skymorph/requests/tile_request"
 require "skymorph/requests/target_request"
 require "skymorph/requests/orbit_request"
 
-module SkyMorph
+require 'skymorph/parsers/observation_table_parser'
+require 'skymorph/values/right_ascension'
+require 'skymorph/values/declination'
+
+module Skymorph
 end
