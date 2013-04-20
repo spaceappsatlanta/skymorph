@@ -1,6 +1,6 @@
 require 'nokogiri'
 
-module Skymorph
+module SkyMorph
   class ObservationTableParser
     def self.parse(raw)
       doc = Nokogiri::HTML(raw)

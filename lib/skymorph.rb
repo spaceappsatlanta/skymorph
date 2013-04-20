@@ -17,5 +17,5 @@ require 'skymorph/parsers/observation_table_parser'
 require 'skymorph/values/right_ascension'
 require 'skymorph/values/declination'
 
-module Skymorph
+module SkyMorph
 end

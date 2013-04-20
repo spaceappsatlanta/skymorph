@@ -1,7 +1,7 @@
 require_relative '../../lib/skymorph/parsers/observation_table_parser'
 
-describe Skymorph::ObservationTableParser do
-  subject { Skymorph::ObservationTableParser }
+describe SkyMorph::ObservationTableParser do
+  subject { SkyMorph::ObservationTableParser }
 
   describe '::parse' do
     let(:result) { subject.parse(Fixtures.observation_table_j99ts7a) }
@@ -32,8 +32,8 @@ describe Skymorph::ObservationTableParser do
 
     it 'fetch the predicted_position' do
       expect(result.first[:predicted_position]).to eq(
-        right_ascension:  Skymorph::RightAscension.new(8, 36, 15.06),
-        declination:      Skymorph::Declination.new(4, 38, 24.1)
+        right_ascension:  SkyMorph::RightAscension.new(8, 36, 15.06),
+        declination:      SkyMorph::Declination.new(4, 38, 24.1)
       )
     end
   end

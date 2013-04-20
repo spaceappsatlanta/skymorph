@@ -5,7 +5,7 @@ describe "Getting an image" do
     before(:all) do
       target_request = SkyMorph::TargetRequest.new("J99TS7A")
       target_response = target_request.fetch
-      @parsed_table = Skymorph::ObservationTableParser.parse(target_response)
+      @parsed_table = SkyMorph::ObservationTableParser.parse(target_response)
     end
 
     it "should find multiple rows" do
