@@ -58,5 +58,13 @@ describe Skymorph::ObservationTableParser do
     it 'fetches offset' do
       expect(result.first[:offset]).to eq(55.14)
     end
+
+    it 'fetches positional_error' do
+      expect(result.first[:positional_error]).to eq(
+        major: nil,
+        minor: nil,
+        position_angle: nil
+      )
+    end
   end
 end

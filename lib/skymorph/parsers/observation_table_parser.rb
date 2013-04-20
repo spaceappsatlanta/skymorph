@@ -27,6 +27,11 @@ module Skymorph
         south_north_degrees_per_hour: row.xpath('td[11]').text.to_f
       }
       offset = row.xpath('td[12]').text.to_f
+      positional_error = {
+        major: string_to_float_or_nil(row.xpath('td[13]').text),
+        minor: string_to_float_or_nil(row.xpath('td[14]').text),
+        position_angle: string_to_float_or_nil(row.xpath('td[15]').text)
+      }
 
       { key: key,
         observation_id: observation_id,
@@ -36,7 +41,8 @@ module Skymorph
         observation_center: observation_center,
         magnitude: magnitude,
         velocity: velocity,
-        offset: offset }
+        offset: offset,
+        positional_error: positional_error }
     end
 
     private
@@ -50,6 +56,11 @@ module Skymorph
       args[1] = args[1].to_i
       args[2] = args[2].to_f
       klass.new(*args)
+    end
+
+    def self.string_to_float_or_nil(string)
+      return nil if string.downcase.strip == 'n.a.'
+      string.to_f
     end
   end
 end
