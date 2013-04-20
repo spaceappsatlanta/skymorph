@@ -1,19 +1,23 @@
 require 'spec_helper'
+require 'net/http'
 
 describe SkyMorph::TargetRequest do
-  let(:http_obj) { double("http_obj") }
-  let(:http_factory) do
-    http_factory = double("http_factory")
-    http_factory.stub(:get) { "Test String" }
-    http_factory.stub(:new) { http_obj }
-    http_factory
+  let(:http_client_double) do
+    obj = double("http_client")
+    obj.stub(:get) { "foo" }
+    obj
   end
-  let(:request) { SkyMorph::TargetRequest.new(target=nil, http_factory=http_factory) }
+
+  let(:request) { SkyMorph::TargetRequest.new(target=nil, http_client=http_client_double) }
 
   describe "#fetch" do
     it { expect(request.fetch).to be_a_kind_of(String) }
   end
 
   describe "makes target search request" do
+    it "should use http object" do
+      http_client_double.should_receive(:get).and_return("foo")
+      request.fetch
+    end
   end
 end
