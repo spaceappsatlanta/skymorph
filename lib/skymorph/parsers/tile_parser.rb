@@ -21,7 +21,5 @@ module SkyMorph
         return tiles
       end
     end
-
-    end
   end
 end

@@ -8,6 +8,4 @@ module Fixtures
       File.read('spec/fixtures/skyview/two_tiles.html')
     end
   end
-
-  end
 end
