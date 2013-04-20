@@ -7,7 +7,7 @@ module SkyMorph
 
     @@request_url = 'http://skyview.gsfc.nasa.gov/cgi-bin/skymorph/mobsdisp.pl?%s'
 
-    def initialize key, http_client=Net::HTTP
+    def initialize(key, http_client=Net::HTTP)
       @http_client  = http_client
       self.key       = key
       self.headers   = '|Observation|Time|ObjRA|ObjDec|Plt RA|Plt Dec|Magnitude|V_RA|V_Dec|E_Maj|E_Min|E_PosAng|x|y|'
