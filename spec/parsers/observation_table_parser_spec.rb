@@ -40,8 +40,8 @@ describe SkyMorph::ObservationTableParser do
 
     it 'fetches to observation_center' do
       expect(result.first[:observation_center]).to eq(
-        right_ascension:  Skymorph::RightAscension.new(8, 33, 21.03),
-        declination:      Skymorph::Declination.new(4, 4, 21.4)
+        right_ascension:  SkyMorph::RightAscension.new(8, 33, 21.03),
+        declination:      SkyMorph::Declination.new(4, 4, 21.4)
       )
     end
 
