@@ -1,4 +1,4 @@
-# Skymorph
+# SkyMorph
 
 A gem to consume SkyMorph data via the NASA
 [SkyView](http://skyview.gsfc.nasa.gov/cgi-bin/titlepage.pl)
@@ -24,7 +24,7 @@ TODO: Write usage instructions here
 
 ## Testing
 
-Skymorph uses Rspec for testing. To run the specs, execture `rspec`.
+SkyMorph uses Rspec for testing. To run the specs, execture `rspec`.
 
 ## Contributing
 

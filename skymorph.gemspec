@@ -5,7 +5,7 @@ require 'skymorph/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "skymorph"
-  spec.version       = Skymorph::VERSION
+  spec.version       = SkyMorph::VERSION
   spec.authors       = ["Zac Stewart", "Thomas Holmes"]
   spec.email         = ["zgstewart@gmail.com", "thomas@devminded.com"]
   spec.description   = %q{Gem to consume SkyMorph data via the NASA SkyView service}

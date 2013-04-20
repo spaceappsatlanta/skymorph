@@ -12,6 +12,5 @@ require "skymorph/requests/position_request"
 require "skymorph/requests/tile_request"
 require "skymorph/requests/target_request"
 
-module Skymorph
-  
+module SkyMorph
 end
