@@ -6,7 +6,7 @@ module SkyMorph
       if input =~ /img src='(.*?)'/
         "#{@@url_base}#{$1}"
       else
-        raise SkyMorph::ParseError
+        raise SkyMorph::ParseError.new "No image source found"
       end
     end
   end
