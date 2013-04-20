@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe SkyMorph::TileParser do
-  let(:parser) { SkyMorph::TileParser.new }
+describe SkyMorph::TileParser::SkyView do
+  let(:parser) { SkyMorph::TileParser::SkyView.new }
 
   describe "parse single tile" do
-    let(:parse_result) { parser.parse_tile_result(Fixtures.one_tile_html) }
+    let(:parse_result) { parser.parse_tile_result(Fixtures::SkyView.one_tile_html) }
     let(:tile) { parse_result.first }
 
     it { expect(parse_result).to_not eq nil }
@@ -14,7 +14,7 @@ describe SkyMorph::TileParser do
   end
 
   describe "parse multiple tiles" do
-    let(:parse_result) { parser.parse_tile_result(Fixtures.two_tile_html) }
+    let(:parse_result) { parser.parse_tile_result(Fixtures::SkyView.two_tile_html) }
 
     it { expect(parse_result).to_not eq nil }
     it { expect(parse_result).to be_a_kind_of(Array) }
