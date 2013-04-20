@@ -1,7 +1,7 @@
 require 'net/http'
 
 module SkyMorph
-  class TargetRequest
+  class TargetRequest < Request
     attr_accessor :target
 
     @@search_target_url = 'http://skyview.gsfc.nasa.gov/cgi-bin/skymorph/mobssel.pl?target=%s&NEAT=on&OE_EPOCH=&OE_EC=&OE_QR=&OE_TP=&OE_OM=&OE_W=&OE_IN=&OE_H='
@@ -11,8 +11,8 @@ module SkyMorph
       self.target = target
     end
 
-    def fetch
-      @http_client.get(@@search_target_url % [target])
+    def url
+      @@search_target_url % [target]
     end
   end
 end
