@@ -1,4 +1,5 @@
 require "skymorph/version"
+require "skymorph/error"
 require "skymorph/parsers/image_parser"
 require "skymorph/parsers/tile_parser"
 require "skymorph/models/tile"

@@ -5,6 +5,8 @@ module SkyMorph
     def parse_html(input)
       if input =~ /img src='(.*?)'/
         "#{@@url_base}#{$1}"
+      else
+        raise SkyMorph::ParseError
       end
     end
   end
