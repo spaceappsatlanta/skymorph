@@ -36,5 +36,27 @@ describe Skymorph::ObservationTableParser do
         declination:      Skymorph::Declination.new(4, 38, 24.1)
       )
     end
+
+    it 'fetches to observation_center' do
+      expect(result.first[:observation_center]).to eq(
+        right_ascension:  Skymorph::RightAscension.new(8, 33, 21.03),
+        declination:      Skymorph::Declination.new(4, 4, 21.4)
+      )
+    end
+
+    it 'fetches the magnitude' do
+      expect(result.first[:magnitude]).to eq(20.70)
+    end
+
+    it 'fetches velocity' do
+      expect(result.first[:velocity]).to eq(
+        west_east_degrees_per_hour: -4.28,
+        south_north_degrees_per_hour: -11.08
+      )
+    end
+
+    it 'fetches offset' do
+      expect(result.first[:offset]).to eq(55.14)
+    end
   end
 end
