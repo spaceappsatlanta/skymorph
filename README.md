@@ -22,6 +22,10 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+## Testing
+
+Skymorph uses Rspec for testing. To run the specs, execture `rspec`.
+
 ## Contributing
 
 1. Fork it
