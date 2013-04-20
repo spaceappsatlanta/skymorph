@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'date'
 
 module Skymorph
   class ObservationTableParser
