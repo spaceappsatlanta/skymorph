@@ -4,6 +4,6 @@ module Fixtures
   end
 
   def self.two_tile_html
-    File.read('spec/fixtures/two_tile.html')
+    File.read('spec/fixtures/two_tiles.html')
   end
 end

@@ -10,4 +10,12 @@ describe SkyMorph::TileParser do
     it { expect(parse_result).to be_a_kind_of(Hash) }
     it { expect(parse_result).to include(:_output_ql) }
   end
+
+  describe "parse multiple tiles" do
+    let(:parse_result) { parser.parse_html(Fixtures.two_tile_html)}
+
+    it { expect(parse_result).to_not eq nil }
+    it { expect(parse_result).to be_a_kind_of(Array) }
+    it { expect(parse_result).to include(:_output_ql) }
+  end
 end
