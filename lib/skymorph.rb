@@ -13,5 +13,7 @@ require "skymorph/requests/tile_request"
 require "skymorph/requests/target_request"
 require "skymorph/requests/orbit_request"
 
-module SkyMorph
+require 'skymorph/parsers/observation_table_parser'
+
+module Skymorph
 end
