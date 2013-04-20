@@ -1,6 +1,8 @@
 # Skymorph
 
-TODO: Write a gem description
+A gem to consume SkyMorph data via the NASA
+[SkyView](http://skyview.gsfc.nasa.gov/cgi-bin/titlepage.pl)
+service.
 
 ## Installation
 
