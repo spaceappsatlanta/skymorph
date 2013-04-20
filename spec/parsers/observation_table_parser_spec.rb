@@ -30,7 +30,7 @@ describe Skymorph::ObservationTableParser do
       expect(result.first[:time]).to eq(DateTime.new(2000, 12, 04, 12, 44, 20))
     end
 
-    it 'fetch the predicted_position' do
+    it 'fetches the predicted_position' do
       expect(result.first[:predicted_position]).to eq(
         right_ascension:  Skymorph::RightAscension.new(8, 36, 15.06),
         declination:      Skymorph::Declination.new(4, 38, 24.1)
