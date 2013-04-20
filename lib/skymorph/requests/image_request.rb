@@ -2,11 +2,11 @@ require 'net/http'
 require 'uri'
 
 module SkyMorph
-  class ImageRequest
+  class ImageRequest < Request
     attr_accessor :headers, :key, :npixel, :singlets, :scaling, :extremum, :oversize, :overscale
 
-    def initialize key, http_factory=Net::HTTP
-      @http_factory = http_factory
+    def initialize key, http_client=Net::HTTP
+      @http_client  = http_client
       @key          = key
       @headers      = '|Observation|Time|ObjRA|ObjDec|Plt RA|Plt Dec|Magnitude|V_RA|V_Dec|E_Maj|E_Min|E_PosAng|x|y|'
       @npixel       = 500
@@ -29,10 +29,6 @@ module SkyMorph
         'OverScale'    => @overscale
       })
       "http://skyview.gsfc.nasa.gov/cgi-bin/skymorph/mobsdisp.pl?#{params}"
-    end
-
-    def fetch
-      @http_factory.get URI url
     end
   end
 end
