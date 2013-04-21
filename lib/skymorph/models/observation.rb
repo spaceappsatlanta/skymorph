@@ -20,5 +20,10 @@ module SkyMorph
       request = TargetRequest.new(target)
       ObservationTableParser.parse(request.fetch).map { |r| new r }
     end
+
+    def images
+      response = ImageRequest.new(key).fetch
+      ImageParser.parse(response).map { |i| Image.new i }
+    end
   end
 end
