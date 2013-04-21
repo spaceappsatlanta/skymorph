@@ -41,6 +41,11 @@ describe SkyMorph::Observation do
       end
 
       it "should have correct right ascension" do
+        expect(observation.right_ascension).to eq right_ascension
+      end
+
+      it "should have correct declination" do
+        expect(observation.declination).to eq declination
       end
     end
   end

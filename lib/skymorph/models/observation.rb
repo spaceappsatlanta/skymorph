@@ -26,7 +26,9 @@ module SkyMorph
       ObservationTableParser.parse(request.fetch).map { |r| new r }
     end
 
-    def self.find_by_orbit
+    def self.find_by_orbit(epoch, eccentricity, per, per_date, om, w, i, h)
+      request = OrbitRequest.new(epoch, eccentricity, per, per_date, om, w, i, h)
+      ObservationTableParser.parse(request.fetch).map { |r| new r }
     end
 
     def images
