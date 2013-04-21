@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'Getting an image' do
   describe 'by target' do
-    let(:observations) { SkyMorph::Observation.find('J99TS7A') }
+    let(:observations) { SkyMorph::Observation.find_by_target('J99TS7A') }
 
     it 'should find multiple rows' do
       expect(observations.count).to be > 1

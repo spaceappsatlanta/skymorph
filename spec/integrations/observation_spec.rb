@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe SkyMorph::Observation do
   describe "#find_by_target" do
-    let(:observations) { SkyMorph::Observation.find_by_target "Ceres" }
+    let(:observations) { SkyMorph::Observation.find_by_target "CERES" }
 
     it "should find observations" do
       expect(observations.count).to be > 1
@@ -20,10 +20,10 @@ describe SkyMorph::Observation do
   end
 
   describe "#find_by_position" do
-    let(:right_ascension) { SkyMorph::RightAscension.new(8, 36, 15.07) }
+    let(:right_ascension) { SkyMorph::RightAscension.new(8, 36, 15.06) }
     let(:declination) { SkyMorph::Declination.new(4, 38, 24.2) }
-    let(:time) { Time.new(2013, 04, 20, 16, 32, 04) }
-    let(:observations) { SkyMorph::Observation.find_by_target(right_ascension, declination, time) }
+    let(:time) { Time.new(2000, 12, 14, 12, 44, 20) }
+    let(:observations) { SkyMorph::Observation.find_by_position(right_ascension, declination, time) }
 
     it "should find observations" do
       expect(observations.count).to be > 1

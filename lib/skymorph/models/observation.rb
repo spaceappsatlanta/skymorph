@@ -23,6 +23,7 @@ module SkyMorph
 
     def self.find_by_position(right_ascension, declination, time)
       request = PositionRequest.new(right_ascension, declination, time)
+      binding.pry
       ObservationTableParser.parse(request.fetch).map { |r| new r }
     end
 
