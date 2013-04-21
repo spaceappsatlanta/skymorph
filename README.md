@@ -49,7 +49,7 @@ obs = SkyMorph::Observation.find('Ceres').first
 key = obs.key # '|960612124155|50246.529224537|244.586842294571|-18.7630733314539|244.964565|-18.55884|7.30|-32.09|-4.65|0.05|0.04|-19.63|2942.15100272039|2568.62273640486|y|'
 SkyMorph::Image.find(key)
 ```
-##Interpeting Results
+##Interpreting Results
 
 * Observation Identification: The CCD containing the object at a specified location.
 * Triplet: This value tells the searcher if the singlet image is a part of a set of triplet images depicting the motion of the object being searched.
