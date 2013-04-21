@@ -15,7 +15,7 @@ describe SkyMorph::PositionRequest do
     subject do
       ra   = SkyMorph::RightAscension.new(8, 36, 15.07)
       dec  = SkyMorph::Declination.new(4, 38, 24.2)
-      time = Time.at(1366489924)
+      time = Time.new(2013, 04, 20, 16, 32, 04)
       SkyMorph::PositionRequest.new(ra, dec, time)
     end
 
