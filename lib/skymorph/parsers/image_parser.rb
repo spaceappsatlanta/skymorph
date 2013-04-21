@@ -3,11 +3,9 @@ module SkyMorph
     @@url_base = 'http://skyview.gsfc.nasa.gov'
 
     def parse_html(input)
-      if input =~ /img src='(.*?)'/
-        "#{@@url_base}#{$1}"
-      else
-        raise SkyMorph::ParseError.new "No image source found"
-      end
+      input.scan(/href='(.*?\.fits)'.*?img src='(.*?)'/mi).
+        map { |fits, src| Image.new(:path => "#{@@url_base}#{src}", :fits_path => "#{@@url_base}#{fits}") }.
+        tap { |result| raise SkyMorph::ParseError.new "Could not parse any images" if result.empty? }
     end
   end
 end
