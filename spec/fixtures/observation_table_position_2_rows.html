@@ -1,0 +1,126 @@
+<html>
+<header>
+<title> SkyMorph Matching Observations </title>
+</header>
+<body>
+<a href="/skymorph/skymorph.map">
+<img alt="Links to SkyMorph Interfaces and Feedback" 
+	src="/skymorph/skymorph.gif" border=0 ISMAP USEMAP="#skymorph"></a>
+<map name=skymorph>
+   <area alt="SkyMorph home page" shape=rect coords="0,0,236,60" 
+	href="/skymorph/skymorph.html">
+   <area alt="SkyMorph home page" shape=rect coords="60,62,117,79" 
+	href="/skymorph/skymorph.html">
+   <area alt="SkyMorph Observation Selection Page" shape=rect 
+	coords="124,62,236,79" href="/skymorph/obs.html">
+   <area alt="SkyMorph Moving Target Detection Page" shape=rect 
+	coords="243,62,359,79" href="/cgi-bin/skymorph/mobs.pl">
+   <area alt="Send Feedback Link" shape=rect coords="374,62,449,79" 
+	href="mailto:tam@silk.gsfc.nasa.gov">
+</map>
+
+<h1> <i>SkyMorph </i>Matching Observations </h1>
+<form action='getimages.pl' method=POST target='MorphDisplay'>
+
+
+<input type=hidden name='Jposit' value='129.062750,  4.640028'>
+<input type=hidden name='oldPosition' value='08 36 15.06,04 38 24.1'>
+<input type=hidden name=Headers value='id|time|exposure|ra|dec|ra0|dec0|nx|ny|sequence|image1|image2|image3|radial|xradial|yradial|xcent|ycent|pixscale|a0|a1|a2|b0|b1|b2'>
+<table border><tr><td bgcolor='#FFFF88'></td><th bgcolor='#FFFF88'> id </th><th bgcolor='#FFFF88'> ra </th><th bgcolor='#FFFF88'> dec </th><th bgcolor='#FFFF88'> time </th><th bgcolor='#FFFF88'> exposure </th><th bgcolor='#FFFF88'> Triplet?</th></tr><tr><td bgcolor='#FFFFAA'><input type=checkbox name=Image value='001204124410|51882.530787037|20|128.337645|4.0726|128.31027|4.06057|4080|4080|0|001204124410a|001204125916a|001204131418a|9.8e-10|2040|2060|2040|2040|6.525e-06|-40.7616|0.00125003|-0.0170697|-69.7721|0.00161338|0.0168178'</td>
+<td bgcolor='#FFFFCC'> 001204124410</td><td bgcolor='#FFFFAA'> 08&nbsp;33&nbsp;21.03</td><td bgcolor='#FFFFAA'> +04&nbsp;04&nbsp;21.4</td><td bgcolor='#FFFFCC'> 2000-12-04&nbsp;12:44:20</td><td bgcolor='#FFFFCC'> 20</td><td bgcolor='#FFFFCC'>Y</td></tr>
+<tr><td bgcolor='#FFFFAA'><input type=checkbox name=Image value='001204131418|51882.551712963|20|128.33376|4.07724|128.31027|4.06557|4080|4080|0|001204124410a|001204125916a|001204131418a|9.8e-10|2040|2060|2040|2040|6.525e-06|-29.8119|0.000976682|-0.0170912|-68.99|0.00224996|0.0162694'</td>
+<td bgcolor='#FFFFCC'> 001204131418</td><td bgcolor='#FFFFAA'> 08&nbsp;33&nbsp;20.10</td><td bgcolor='#FFFFAA'> +04&nbsp;04&nbsp;38.1</td><td bgcolor='#FFFFCC'> 2000-12-04&nbsp;13:14:28</td><td bgcolor='#FFFFCC'> 20</td><td bgcolor='#FFFFCC'>Y</td></tr>
+</table>
+<table>
+  <tr>
+    <th colspan=4 align=center  bgcolor='#FFDDDD'> Request Parameters </th>
+  </tr>
+  <tr>
+    <td  bgcolor='#FFDDDD' align=right> <label for=Position>Use Position:</label> </td>
+    <td align=left  bgcolor='#FFDDDD'> <input id=Position name=Position value='08 36 15.06,04 38 24.1'> </td>
+    <td  bgcolor='#FFDDDD' align=right > <label for=Npixel> NEAT Pixels:</label> </td>
+    <td  bgcolor='#FFDDDD' align=right>
+      <input id=Npixel name=Npixel value=300>
+    </td>
+  </tr>
+  <tr>
+    <td  bgcolor='#FFDDDD' align=right><label for=Singlets> Show Singlets:</label> </td>
+    <td  bgcolor='#FFDDDD' align=left ><input id=Singlets name=Singlets type=checkbox checked></td>
+    <td  bgcolor='#FFDDDD' align=right> <label for=Triplets> Show Triplets:</label> </td>
+    <td  bgcolor='#FFDDDD' align=left ><input id=Triplets name=Triplets type=checkbox></td>
+  </tr>
+  
+  <tr>
+    <td  bgcolor='#FFDDDD' align=right> <label for=Scaling>  Scaling:</label></td>
+    <td  bgcolor='#FFDDDD' align=left>
+      <select id=Scaling name=Scaling>
+        <option selected> Log
+        <option> Linear
+        <option> HistEq
+      </select>
+    </td>
+    <td  bgcolor='#FFDDDD' align=right> <label for=Extremum> Extremum cutoff: </label></td>
+    <td  bgcolor='#FFDDDD' align=left>
+      <select id=Extremum name=Extremum>
+        <option selected value='Dft' > Default 
+        <option value=0.0000000001> 0
+        <option value=0.005> 0.5%
+        <option value=0.001> 0.1%
+        <option value=0.005> 0.5%
+        <option value=0.01 > 1%
+        <option value=0.02 > 2%
+        <option value=0.05 > 5%
+        <option value=0.10 > 10%
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th colspan=4 align=center  bgcolor='#DDDDFF'>
+       SkyView Comparisons
+    </th>
+  </tr>
+  <tr>
+    <td align=right  bgcolor='#DDDDFF'>
+      <label for=SkyView> DSS Image:</label>
+    </td>
+    <td align=left  bgcolor='#DDDDFF'>
+       <input id=SkyView name=SkyView type=checkbox checked>
+    </td>
+    <td align=right  bgcolor='#DDDDFF'> <label for=SkyOver>NEAT/DSS SkyView overlay:</label></td>
+    <td align=left  bgcolor='#DDDDFF'> <input id=SkyOver name=SkyOver type=checkbox checked> </td>
+  </tr>
+  <tr>
+     <td align=right  bgcolor='#DDDDFF'> <label for=OverSize> # Pixels </label></td>
+     <td align=left   bgcolor='#DDDDFF'> <input id=OverSize name=OverSize value=300></td>
+     <td align=right  bgcolor='#DDDDFF'> <label for=OverScale> Pixel Scale: </label></td>
+     <td align=left   bgcolor='#DDDDFF'> <input id=OverScale name=OverScale value=0.5></td>
+  </tr>
+</table>
+
+<font color=red size=+1>
+<input type=submit value='Request Images'>
+<input type=reset>
+</font>
+</form>
+This page allows users to display images from the NEAT archive,
+look at sources within the field of view, and compare the
+NEAT data with SkyView DSS images.
+<p>
+Select one or more images returned and choose from the available
+options.  If you did not specify a position
+originally (i.e., this was a time search), 
+enter a name or coordinate in the coordinate box.
+<p>
+You may choose to look at individual NEAT images (singlets), or
+trios of NEAT images taken for the same region with
+about a 20 minute separation (triplets).
+You may also view the same region using the SkyView service
+to get a DSS image, or to overlay the NEAT and DSS data
+using SkyView.
+<p>
+For the singlet and triplet images, information the objects
+NEAT has found in that region can be retrieved. (Currently
+problems in the NEAT object catalog may prevent
+this feature from working).
+</body>
+</html>
