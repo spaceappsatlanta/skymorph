@@ -1,5 +1,7 @@
 # SkyMorph
 
+[![Build Status](https://travis-ci.org/spaceappsatlanta/skymorph.png?branch=master)](https://travis-ci.org/spaceappsatlanta/skymorph)
+
 A gem to consume SkyMorph data via the NASA
 [SkyView](http://skyview.gsfc.nasa.gov/cgi-bin/titlepage.pl)
 service.
