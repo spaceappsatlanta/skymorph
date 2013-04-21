@@ -16,9 +16,17 @@ module SkyMorph
     attribute :positional_error, Hash
     attribute :pixel_location, Hash
 
-    def self.find(target)
+    def self.find_by_target(target)
       request = TargetRequest.new(target)
       ObservationTableParser.parse(request.fetch).map { |r| new r }
+    end
+
+    def self.find_by_position(right_ascension, declination, time)
+      request = PositionRequest.new(right_ascension, declination, time)
+      ObservationTableParser.parse(request.fetch).map { |r| new r }
+    end
+
+    def self.find_by_orbit
     end
 
     def images
