@@ -10,7 +10,7 @@ describe "Getting an image" do
 
     describe "Get image from key" do
       let(:observation) { observations.sample }
-      let(:image_url) do
+      let(:images) do
         image_request = SkyMorph::ImageRequest.new(observation.key)
         image_response = image_request.fetch
         image_parser = SkyMorph::ImageParser.new
@@ -18,9 +18,8 @@ describe "Getting an image" do
       end
 
 
-      it "Should be a url to an image" do
-        expect(image_url).to start_with("http")
-        expect(image_url).to end_with("gif")
+      it "Should return images" do
+        expect(images.first).to be_a_kind_of SkyMorph::Image
       end
     end
   end
