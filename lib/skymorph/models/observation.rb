@@ -5,7 +5,7 @@ module SkyMorph
     include Virtus
 
     attribute :key, String
-    attribute :triplet, Array
+    attribute :triplet, Boolean
     attribute :time, DateTime
     attribute :predicted_position, Hash
     attribute :observation_center, Hash
