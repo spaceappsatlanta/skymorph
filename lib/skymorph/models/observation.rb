@@ -22,8 +22,7 @@ module SkyMorph
     end
 
     def images
-      response = ImageRequest.new(key).fetch
-      ImageParser.parse(response).map { |i| Image.new i }
+      Image.find(key)
     end
   end
 end
