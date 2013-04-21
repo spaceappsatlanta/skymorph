@@ -13,8 +13,7 @@ describe "Getting an image" do
       let(:images) do
         image_request = SkyMorph::ImageRequest.new(observation.key)
         image_response = image_request.fetch
-        image_parser = SkyMorph::ImageParser.new
-        image_parser.parse_html(image_response)
+        SkyMorph::ImageParser.parse_html(image_response)
       end
 
 
