@@ -22,13 +22,12 @@ describe "Getting an image" do
         image_request = SkyMorph::ImageRequest.new(key)
         image_response = image_request.fetch
         image_parser = SkyMorph::ImageParser.new
-        @image_url = image_parser.parse_html(image_response)
+        @images = image_parser.parse_html(image_response)
       end
 
 
-      it "Should be a url to an image" do
-        expect(@image_url).to start_with("http")
-        expect(@image_url).to end_with("gif")
+      it "Should return images" do
+        expect(@images.first).to be_a_kind_of SkyMorph::Image
       end
     end
   end
