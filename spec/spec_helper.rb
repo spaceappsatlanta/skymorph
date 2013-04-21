@@ -4,7 +4,7 @@ require 'pry'
 
 module SkyMorph
   module Helpers
-    def http_client_double response_string
+    def http_client_double response_string=''
       response = double 'response'
       response.stub(:body_str) { response_string }
 
