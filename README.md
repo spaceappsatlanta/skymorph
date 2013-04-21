@@ -51,13 +51,13 @@ SkyMorph::Image.find(key)
 ```
 ##Interpeting Results
 
-* Observation Identification: The CCD containing the object at a specified location. Check the box to the right of the Obs. ID and click the Display Images button to view the singlet image.
-* Triplet: This value tells the searcher if the singlet image is a part of a set of triplet images depicting the motion of the object being searched. Y means yes and n means no. If you're choosing to view the triplet, be sure to check the Show Triplets box under the Request Parameters section.
+* Observation Identification: The CCD containing the object at a specified location.
+* Triplet: This value tells the searcher if the singlet image is a part of a set of triplet images depicting the motion of the object being searched.
 * Time: The observing time in UTC.
 * Predicted Object Position: The object's predicted position according to the Ephemeris of the observation site.
 * Observation Center: The center of the field of view of the observation specific CCD.
 * Magnitude: The object's apparent magnitude.
-* Velocity: This is split into two different columns and has units of arc seconds per hour. The first column displays the velocity in the North-South direction. An object moving from South to North will display a positive number in this column and vice-versa. The second column displays the velocity in the East-West direction. An object moving from West to East will display a positive number in this column and vice-versa.
+* Velocity: This is split into two different values and has units of arc seconds per hour. The first value displays the velocity in the North-South direction. An object moving from South to North will display a positive number in this column and vice-versa. The second value displays the velocity in the East-West direction. An object moving from West to East will display a positive number in this value and vice-versa.
 * Offset: Shown in arc minutes. This is the difference between the predicted object position and the center of the field of view.
 * Positional Error: This is split into three values: Major, Minor and Position Angle. Both the major and minor errors are shown in arc seconds and the position angle is shown in degrees.
 * Pixel Location: This value gives the coordinates of the object on the singlet image on the X-Y plane on the large overall image. For most images the range is 0 to 4000 in both the X and Y directions. The object will not be depicted on any image located greater than 4000 or less than 0.
