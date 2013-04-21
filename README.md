@@ -5,6 +5,8 @@
 
 A gem to interface with the NASA [SkyMorph](http://skyview.gsfc.nasa.gov/skymorph/skymorph.html).
 
+There is a sample Sinatra app running this gem [on Heroku](http://skymorph.herokuapp.com/) with source code available [on GitHub](https://github.com/spaceappsatlanta/skynotra).
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -21,11 +23,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+There are several ways to obtain observations:
+
+```ruby
+# By target name
+SkyMorph::Observation.find('J99TS7A')
+
+# By position - right ascension and declination may be strings or value objects
+Skymorph::Observation.find_by_position(right_ascension, declination, time)
+
+# By orbit - ...
+SkyMorph::Observation.find_by_orbit epoch, ecc, per, per_date, om, w, i, h
+```
+
+Once you have an observation, you can retrieve its images:
+
+```ruby
+observation.images
+```
+
+You can also look up images directly, if you have their key:
+
+```ruby
+obs = SkyMorph::Observation.find('Ceres').first
+key = obs.key # '|960612124155|50246.529224537|244.586842294571|-18.7630733314539|244.964565|-18.55884|7.30|-32.09|-4.65|0.05|0.04|-19.63|2942.15100272039|2568.62273640486|y|'
+SkyMorph::Image.find key
+```
 
 ## Testing
 
-SkyMorph uses Rspec for testing. To run the specs, execture `rspec`.
+SkyMorph uses Rspec for testing. To run the specs, execute `rspec`.
 
 ## Contributing
 
