@@ -5,7 +5,7 @@ module SkyMorph
     include Virtus
 
     attribute :gif_path, String
-    attribute :fips_path, String
+    attribute :fits_path, String
 
     def path type
       send :"#{type}_path"
