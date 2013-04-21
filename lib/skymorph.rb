@@ -4,6 +4,7 @@ require "skymorph/error"
 require "skymorph/parsers/image_parser"
 require "skymorph/parsers/tile_parser"
 
+require "skymorph/models/image"
 require "skymorph/models/tile"
 
 require "skymorph/requests/request"
